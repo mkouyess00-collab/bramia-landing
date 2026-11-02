@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
 <meta charset="utf-8">
-<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'sha256-Lzx8qubMCmyp0WwEcFXijt2KqUaUfMU1sxFJGyHztLs='; style-src 'self' 'unsafe-inline'; font-src 'self'; img-src 'self' data:; media-src 'self'; connect-src https://formsubmit.co; form-action https://formsubmit.co; manifest-src 'self'; base-uri 'none'; object-src 'none'; upgrade-insecure-requests">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'sha256-n0jnjohH8lAfgdbwfO8h4Kz9pwjofQWrAemsImJyCms='; style-src 'self' 'unsafe-inline'; font-src 'self'; img-src 'self' data:; media-src 'self'; connect-src https://formsubmit.co; form-action https://formsubmit.co; manifest-src 'self'; base-uri 'none'; object-src 'none'; upgrade-insecure-requests">
 <meta name="referrer" content="strict-origin-when-cross-origin">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Bramia · Agencia de Facebook Ads e Instagram Ads</title>
@@ -50,6 +50,15 @@ header{position:fixed;inset:0 0 auto;z-index:50;transition:background .4s,border
 header.solida{background:rgba(28,28,28,.82);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-color:var(--linea)}
 header .wrap{display:flex;align-items:center;justify-content:space-between;height:76px}
 header .logo img{height:44px;width:auto}
+nav{display:flex;gap:6px}
+nav a{font-size:14.5px;font-weight:600;color:var(--piedra);text-decoration:none;padding:10px 14px;border-radius:999px;transition:color .3s,background .3s}
+nav a:hover,nav a.activa{color:var(--blanco);background:rgba(245,244,240,.07)}
+.menu-btn{display:none;width:44px;height:44px;border-radius:50%;border:1px solid var(--linea);background:transparent;cursor:pointer;position:relative}
+.menu-btn span{position:absolute;left:13px;right:13px;height:1.5px;background:var(--blanco);transition:transform .35s var(--ease)}
+.menu-btn span:first-child{top:17px}.menu-btn span:last-child{top:25px}
+.menu-btn[aria-expanded="true"] span:first-child{transform:translateY(4px) rotate(45deg)}
+.menu-btn[aria-expanded="true"] span:last-child{transform:translateY(-4px) rotate(-45deg)}
+main section{scroll-margin-top:72px}
 header .btn{padding:12px 22px;font-size:14px}
 
 /* Portada */
@@ -177,6 +186,11 @@ footer a:hover{border-color:var(--plata)}
 .js .recorrido.in .paso{opacity:1;transform:none}
 
 @media (max-width:980px){
+  .menu-btn{display:block}
+  nav{position:absolute;top:76px;left:0;right:0;flex-direction:column;gap:0;padding:8px 20px 18px;background:rgba(28,28,28,.97);border-bottom:1px solid var(--linea);opacity:0;visibility:hidden;transform:translateY(-8px);transition:opacity .3s,transform .4s var(--ease),visibility 0s .4s}
+  nav.abierto{opacity:1;visibility:visible;transform:none;transition:opacity .3s,transform .4s var(--ease)}
+  nav a{font-size:18px;padding:14px 4px;border-radius:0;border-bottom:1px solid var(--linea)}
+  nav a:last-child{border-bottom:0}
   .cab{grid-template-columns:1fr}
   .tarjetas{grid-template-columns:1fr 1fr}
   .fases{grid-template-columns:1fr}
@@ -215,11 +229,18 @@ footer a:hover{border-color:var(--plata)}
 <header>
   <div class="wrap">
     <a class="logo" href="#inicio" aria-label="Bramia, inicio"><img src="assets/logo.png" width="500" height="170" alt="Bramia"></a>
+    <button class="menu-btn" type="button" aria-expanded="false" aria-controls="menu" aria-label="Abrir menú"><span></span><span></span></button>
+    <nav id="menu" aria-label="Secciones">
+      <a href="#inicio">Inicio</a>
+      <a href="#multicanal">Por qué multicanal</a>
+      <a href="#metodo">Cómo trabajamos</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
   </div>
 </header>
 
-<main id="inicio">
-  <section class="hero">
+<main>
+  <section class="hero" id="inicio">
     <div class="wrap">
       <p class="eyebrow rv in">Agencia especializada en Facebook Ads e Instagram Ads</p>
       <div class="logo-anim" aria-hidden="true">
@@ -295,7 +316,7 @@ footer a:hover{border-color:var(--plata)}
     </div>
   </section>
 
-  <section class="crecer">
+  <section class="crecer" id="contacto">
     <div class="wrap">
       <h2 class="rv">Nosotros nos encargamos<br><span class="metal">de que crezcas.</span></h2>
       <p class="rv" style="--d:.15s">Tú te centras en tu negocio. Nosotros, en que cada vez más personas lo conozcan y lo elijan.</p>
@@ -369,6 +390,17 @@ footer a:hover{border-color:var(--plata)}
     head.classList.toggle('solida', scrollY > 30);
   };
   addEventListener('scroll', onScroll, { passive: true }); onScroll();
+
+  // Menú: abrir en móvil, cerrar al elegir y marcar la sección en pantalla
+  const nav = d.getElementById('menu'), menuBtn = d.querySelector('.menu-btn');
+  const abrirMenu = v => { nav.classList.toggle('abierto', v); menuBtn.setAttribute('aria-expanded', v); head.classList.toggle('solida', v || scrollY > 30); };
+  menuBtn.addEventListener('click', () => abrirMenu(!nav.classList.contains('abierto')));
+  nav.querySelectorAll('a').forEach(a => a.addEventListener('click', () => abrirMenu(false)));
+  const enlaces = [...nav.querySelectorAll('a')];
+  const ioNav = new IntersectionObserver(es => es.forEach(e => {
+    if (e.isIntersecting) enlaces.forEach(a => a.classList.toggle('activa', a.hash === '#' + e.target.id));
+  }), { rootMargin: '-45% 0px -50% 0px' });
+  enlaces.forEach(a => ioNav.observe(d.querySelector(a.hash)));
 
   // Animación del logo: se reproduce una vez y queda el logo final
   const v = d.querySelector('.logo-video');
