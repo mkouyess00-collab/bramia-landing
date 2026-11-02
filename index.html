@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
 <meta charset="utf-8">
-<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'sha256-kVK9RgHqYKHSHk2LrfSbq5cfGDOZb5fUex4LxSjdfW8='; style-src 'self' 'unsafe-inline'; font-src 'self'; img-src 'self' data:; media-src 'self'; connect-src https://formsubmit.co; form-action https://formsubmit.co; manifest-src 'self'; base-uri 'none'; object-src 'none'; upgrade-insecure-requests">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'sha256-Lzx8qubMCmyp0WwEcFXijt2KqUaUfMU1sxFJGyHztLs='; style-src 'self' 'unsafe-inline'; font-src 'self'; img-src 'self' data:; media-src 'self'; connect-src https://formsubmit.co; form-action https://formsubmit.co; manifest-src 'self'; base-uri 'none'; object-src 'none'; upgrade-insecure-requests">
 <meta name="referrer" content="strict-origin-when-cross-origin">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Bramia · Agencia de Facebook Ads e Instagram Ads</title>
@@ -325,7 +325,6 @@ footer a:hover{border-color:var(--plata)}
           <input type="hidden" name="_captcha" value="false">
           <button class="btn btn-metal" type="submit">Enviar <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
           <p class="legal">Usaremos tus datos solo para preparar y enviarte tu propuesta.</p>
-          <p class="error" role="alert" hidden>No hemos podido enviar tu solicitud. Inténtalo de nuevo o escríbenos a <a href="mailto:contacto@bramia.es">contacto@bramia.es</a>.</p>
         </form>
   </div>
 </dialog>
@@ -391,8 +390,7 @@ footer a:hover{border-color:var(--plata)}
 
   // Formulario de propuesta
   const f = d.getElementById('form-propuesta');
-  const err = f.querySelector('.error'), btn = f.querySelector('button[type=submit]'), btnHtml = btn.innerHTML;
-  f.addEventListener('submit', async e => {
+  f.addEventListener('submit', e => {
     e.preventDefault();
     if (!f.reportValidity()) return;
     const data = Object.fromEntries(new FormData(f));
@@ -410,21 +408,16 @@ Estás en buenas manos.
 Un saludo,
 El equipo de Bramia
 Tu negocio merece ser visto · bramia.es`;
-    btn.disabled = true; btn.textContent = 'Enviando…'; err.hidden = true;
-    try {
-      const r = await fetch(f.action.replace('formsubmit.co/', 'formsubmit.co/ajax/'), {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
-        body: JSON.stringify(data)
-      });
-      const j = await r.json();
-      if (!r.ok || String(j.success) !== 'true') throw new Error(j.message || 'error');
-      gracias.querySelector('.g-nombre').textContent = nombre;
-      f.reset(); encuesta.close(); gracias.showModal();
-    } catch (x) {
-      err.hidden = false;
-    }
-    btn.disabled = false; btn.innerHTML = btnHtml;
+    // FormSubmit tarda hasta un minuto en responder (y a veces da error aunque el correo llega):
+    // el envío sigue por detrás y el gracias sale al momento.
+    fetch(f.action.replace('formsubmit.co/', 'formsubmit.co/ajax/'), {
+      method: 'POST',
+      keepalive: true,
+      headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+      body: JSON.stringify(data)
+    }).catch(() => {});
+    gracias.querySelector('.g-nombre').textContent = nombre;
+    f.reset(); encuesta.close(); gracias.showModal();
   });
 })();
 </script>
