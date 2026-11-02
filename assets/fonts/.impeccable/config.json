@@ -1,0 +1,17 @@
+{
+  "detector": {
+    "ignoreRules": [],
+    "ignoreFiles": [],
+    "ignoreValues": [
+      {
+        "rule": "gradient-text",
+        "value": "*",
+        "files": [
+          "bramia-landing/index.html"
+        ],
+        "createdAt": "2026-11-02T18:55:05.626Z",
+        "reason": "Claude: el texto metálico reproduce el plateado cepillado del logo oficial de Bramia (identidad-de-marca-bramia)"
+      }
+    ]
+  }
+}

@@ -1,0 +1,432 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'sha256-kVK9RgHqYKHSHk2LrfSbq5cfGDOZb5fUex4LxSjdfW8='; style-src 'self' 'unsafe-inline'; font-src 'self'; img-src 'self' data:; media-src 'self'; connect-src https://formsubmit.co; form-action https://formsubmit.co; manifest-src 'self'; base-uri 'none'; object-src 'none'; upgrade-insecure-requests">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bramia · Agencia de Facebook Ads e Instagram Ads</title>
+<meta name="description" content="Bramia, agencia especializada en Facebook Ads e Instagram Ads con enfoque multicanal. Auditoría integral, estrategia y proyección de resultados. Tu negocio merece ser visto.">
+<meta property="og:title" content="Bramia · Agencia de Facebook Ads e Instagram Ads">
+<meta property="og:description" content="Tu negocio merece ser visto. Nos encargamos de que crezcas.">
+<meta property="og:image" content="https://mkouyess00-collab.github.io/bramia-landing/assets/logo-final.jpg">
+<meta name="theme-color" content="#1C1C1C">
+<link rel="icon" href="assets/favicon.png">
+<link rel="preload" href="assets/fonts/archivo-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+<style>
+@font-face{font-family:"Archivo";src:url(assets/fonts/archivo-latin-wght-normal.woff2) format("woff2");font-weight:100 900;font-display:swap}
+@font-face{font-family:"Manrope";src:url(assets/fonts/manrope-latin-wght-normal.woff2) format("woff2");font-weight:200 800;font-display:swap}
+:root{
+  --carbon:#1C1C1C;--grafito:#393939;--blanco:#F5F4F0;--piedra:#D8D6D1;--plata:#C0C0C0;
+  --linea:rgba(245,244,240,.12);--suave:rgba(245,244,240,.66);
+  --metal:linear-gradient(100deg,#8e8e8e 0%,#f5f4f0 28%,#a9a9a9 46%,#ececea 64%,#8e8e8e 100%);
+  --ease:cubic-bezier(.22,1,.36,1);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{background:var(--carbon);color:var(--blanco);font:400 17px/1.6 "Manrope",system-ui,sans-serif;overflow-x:hidden}
+img,video{display:block;max-width:100%}
+a{color:inherit}
+.wrap{width:min(1180px,100% - 40px);margin-inline:auto}
+h1,h2,h3{font-family:"Archivo",sans-serif;font-weight:800;letter-spacing:-.03em;line-height:1}
+.metal{background:var(--metal);background-size:220% 100%;-webkit-background-clip:text;background-clip:text;color:transparent;animation:brillo 7s linear infinite}
+@keyframes brillo{to{background-position:-220% 0}}
+.eyebrow{font:600 12px/1.2 "Manrope";letter-spacing:.22em;text-transform:uppercase;color:var(--plata)}
+.eyebrow::before{content:"";display:inline-block;width:28px;height:1px;background:var(--plata);vertical-align:middle;margin-right:12px}
+
+/* Botones */
+.btn{display:inline-flex;align-items:center;gap:12px;padding:17px 30px;border-radius:999px;font:700 15px/1 "Manrope";letter-spacing:.02em;text-decoration:none;border:0;cursor:pointer;transition:transform .4s var(--ease),box-shadow .4s var(--ease),background .3s}
+.btn-metal{background:var(--metal);background-size:220% 100%;color:#141414;box-shadow:0 10px 40px -12px rgba(220,220,220,.45),inset 0 1px 0 rgba(255,255,255,.7);animation:brillo 7s linear infinite}
+.btn-metal:hover{transform:translateY(-2px);box-shadow:0 18px 50px -12px rgba(230,230,230,.6),inset 0 1px 0 rgba(255,255,255,.7)}
+.btn-metal svg{transition:transform .4s var(--ease)}
+.btn-metal:hover svg{transform:translateX(4px)}
+.btn-linea{color:var(--blanco);border:1px solid var(--linea);background:transparent}
+.btn-linea:hover{border-color:var(--plata)}
+.btn:focus-visible,input:focus-visible,textarea:focus-visible{outline:2px solid var(--plata);outline-offset:3px}
+
+/* Cabecera */
+.progreso{position:fixed;top:0;left:0;right:0;height:2px;background:var(--metal);transform-origin:0 50%;transform:scaleX(0);z-index:60}
+header{position:fixed;inset:0 0 auto;z-index:50;transition:background .4s,border-color .4s;border-bottom:1px solid transparent}
+header.solida{background:rgba(28,28,28,.82);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-color:var(--linea)}
+header .wrap{display:flex;align-items:center;justify-content:space-between;height:76px}
+header .logo img{height:44px;width:auto}
+header .btn{padding:12px 22px;font-size:14px}
+
+/* Portada */
+.hero{position:relative;padding:118px 0 72px;text-align:center;overflow:hidden}
+.hero::before{content:"";position:absolute;inset:-20% -10% auto;height:120%;background:radial-gradient(50% 45% at 50% 38%,rgba(192,192,192,.13),transparent 70%);pointer-events:none}
+.hero .eyebrow::after{content:"";display:inline-block;width:28px;height:1px;background:var(--plata);vertical-align:middle;margin-left:12px}
+.logo-anim{position:relative;width:min(980px,100%);margin:22px auto 0;aspect-ratio:1280/400;overflow:hidden;background:var(--carbon);
+  -webkit-mask:radial-gradient(60% 70% at 50% 50%,#000 55%,transparent 100%);mask:radial-gradient(60% 70% at 50% 50%,#000 55%,transparent 100%)}
+.logo-anim video,.logo-anim img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;mix-blend-mode:screen}
+.hero h1{font-size:clamp(46px,8.4vw,118px);margin-top:4px}
+.hero h1 .w{display:inline-block;overflow:hidden;vertical-align:bottom;padding-bottom:.08em}
+.hero h1 .w>span{display:inline-block}
+.hero .sub{max-width:640px;margin:24px auto 0;font-size:clamp(17px,1.5vw,20px);color:var(--suave)}
+.hero .sub strong{color:var(--blanco);font-weight:700}
+.hero .ctas{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin-top:34px}
+.canales{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-top:40px}
+.canales span{font-size:13px;font-weight:600;color:var(--piedra);border:1px solid var(--linea);border-radius:999px;padding:8px 16px}
+.canales span.pri{color:var(--blanco);border-color:rgba(192,192,192,.5);background:rgba(192,192,192,.08)}
+
+/* Banda */
+.banda{border-block:1px solid var(--linea);background:var(--grafito);overflow:hidden;padding:20px 0}
+.banda-in{display:flex;width:max-content;animation:desliza 38s linear infinite}
+.banda-in p{font:800 clamp(22px,2.6vw,34px)/1 "Archivo";letter-spacing:-.02em;white-space:nowrap;padding-right:28px}
+.banda-in p i{font-style:normal;color:var(--plata);padding:0 28px}
+@keyframes desliza{to{transform:translateX(-50%)}}
+
+/* Secciones */
+section.bloque{padding:110px 0}
+.cab{display:grid;grid-template-columns:1.15fr 1fr;gap:28px 56px;align-items:end;margin-bottom:56px}
+.cab h2{font-size:clamp(36px,5vw,66px);margin-top:16px}
+.cab p{color:var(--suave);font-size:18px;max-width:520px}
+
+/* Recorrido multicanal */
+.recorrido{position:relative;display:grid;grid-template-columns:repeat(5,1fr);gap:12px;margin-bottom:56px}
+.recorrido::before{content:"";position:absolute;left:10%;right:10%;top:27px;height:1px;background:var(--linea)}
+.recorrido::after{content:"";position:absolute;left:10%;right:10%;top:27px;height:1px;background:var(--metal);transform-origin:0 50%;transform:scaleX(var(--p,1));transition:transform 2.2s var(--ease) .2s}
+.paso{position:relative;z-index:1;text-align:center}
+.paso .punto{width:56px;height:56px;margin:0 auto 14px;border-radius:50%;display:grid;place-items:center;background:var(--carbon);border:1px solid rgba(192,192,192,.45);color:var(--blanco)}
+.paso .punto svg{width:22px;height:22px}
+.paso b{display:block;font-weight:700;font-size:15px}
+.paso small{display:block;color:var(--suave);font-size:13px;line-height:1.4;margin-top:4px}
+.paso:last-child .punto{background:var(--metal);color:#141414;border:0}
+
+.tarjetas{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.tarjeta{position:relative;padding:30px 26px 32px;border:1px solid var(--linea);border-radius:20px;background:linear-gradient(180deg,rgba(57,57,57,.55),rgba(57,57,57,.15));overflow:hidden;transition:border-color .4s,transform .5s var(--ease)}
+.tarjeta:hover{border-color:rgba(192,192,192,.45);transform:translateY(-4px)}
+.tarjeta::after{content:"";position:absolute;inset:0;background:radial-gradient(240px 160px at var(--mx,50%) var(--my,0%),rgba(220,220,220,.12),transparent 70%);opacity:0;transition:opacity .4s;pointer-events:none}
+.tarjeta:hover::after{opacity:1}
+.tarjeta .n{font:700 13px/1 "Manrope";color:var(--plata);letter-spacing:.14em}
+.tarjeta h3{font-size:24px;margin:18px 0 12px;letter-spacing:-.02em;line-height:1.1}
+.tarjeta p{color:var(--suave);font-size:15.5px}
+
+/* Método */
+.metodo{background:var(--blanco);color:var(--carbon)}
+.metodo .eyebrow{color:#6d6d6a}.metodo .eyebrow::before{background:#6d6d6a}
+.metodo .cab p{color:#55554f}
+.metodo .metal{background-image:linear-gradient(100deg,#2a2a2a 0%,#7c7c7c 30%,#2a2a2a 55%,#8a8a8a 75%,#2a2a2a 100%)}
+.fases{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid #cfccc5}
+.fase{padding:34px 34px 38px 0;border-right:1px solid #cfccc5}
+.fase+.fase{padding-left:34px}
+.fase:last-child{border-right:0;padding-right:0}
+.fase .num{font:800 clamp(64px,7vw,96px)/.9 "Archivo";letter-spacing:-.05em;color:transparent;-webkit-text-stroke:1.5px #9b9a95}
+.fase h3{font-size:28px;margin:20px 0 12px;letter-spacing:-.02em}
+.fase p{color:#4c4c47;font-size:16px}
+.fase ul{list-style:none;margin-top:16px;display:grid;gap:6px}
+.fase li{font-size:14px;font-weight:600;color:#343630;padding-left:20px;position:relative}
+.fase li::before{content:"";position:absolute;left:0;top:.62em;width:10px;height:1px;background:#343630}
+.confianza{margin-top:56px;display:grid;grid-template-columns:auto 1fr;gap:34px;align-items:center;background:var(--carbon);color:var(--blanco);border-radius:24px;padding:44px 52px}
+.confianza img{width:96px;height:96px}
+.confianza blockquote{font:600 clamp(22px,2.4vw,31px)/1.3 "Archivo";letter-spacing:-.02em}
+.confianza cite{display:block;margin-top:14px;font:600 13px "Manrope";letter-spacing:.18em;text-transform:uppercase;color:var(--plata);font-style:normal}
+
+/* Crecer */
+.crecer{padding:120px 0;text-align:center;position:relative;overflow:hidden}
+.crecer::before{content:"";position:absolute;inset:0;background:radial-gradient(45% 60% at 50% 100%,rgba(192,192,192,.14),transparent 70%)}
+.crecer h2{position:relative;font-size:clamp(48px,9vw,132px);line-height:.92}
+.crecer p{position:relative;max-width:560px;margin:26px auto 34px;color:var(--suave);font-size:18px}
+
+/* Encuesta y gracias (ventanas emergentes) */
+html:has(dialog[open]){overflow:hidden}
+.modal{width:min(620px,100% - 32px);max-height:calc(100dvh - 32px);margin:auto;padding:0;overflow:auto;background:var(--carbon);color:var(--blanco);border:1px solid rgba(192,192,192,.28);border-radius:24px;box-shadow:0 50px 120px -30px rgba(0,0,0,.8)}
+.modal::backdrop{background:rgba(12,12,12,.74);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px)}
+.modal[open]{animation:aparece .55s var(--ease)}
+.modal[open]::backdrop{animation:funde .4s ease}
+@keyframes aparece{from{opacity:0;transform:translateY(24px) scale(.97)}}
+@keyframes funde{from{opacity:0}}
+.modal-in{position:relative;padding:44px 40px 36px}
+.modal h2{font-size:clamp(30px,4vw,42px);margin:14px 0 12px}
+.modal .intro{color:var(--suave);margin-bottom:26px;font-size:16px}
+.cerrar{position:absolute;top:16px;right:16px;width:40px;height:40px;border-radius:50%;display:grid;place-items:center;background:rgba(245,244,240,.06);border:1px solid var(--linea);color:var(--blanco);cursor:pointer;transition:border-color .3s,transform .4s var(--ease)}
+.cerrar:hover{border-color:var(--plata);transform:rotate(90deg)}
+.campo{display:grid;gap:8px;margin-bottom:18px}
+.campo label{font-size:14px;font-weight:600;color:var(--piedra)}
+.campo input,.campo textarea{width:100%;font:400 16px/1.5 "Manrope";color:var(--blanco);background:rgba(245,244,240,.04);border:1px solid var(--linea);border-radius:12px;padding:15px 16px;transition:border-color .3s,background .3s}
+.campo input:focus,.campo textarea:focus{border-color:var(--plata);background:rgba(245,244,240,.07);outline:none}
+.campo textarea{min-height:140px;resize:vertical}
+.dos{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.trampa{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
+.modal form .btn{width:100%;justify-content:center;margin-top:6px}
+.modal form .btn:disabled{opacity:.7;cursor:wait}
+.legal{font-size:12.5px;color:rgba(245,244,240,.5);margin-top:14px;line-height:1.5}
+.error{margin-top:14px;font-size:14px;color:#f0b4ab}
+.gracias{text-align:center;padding-top:52px}
+.gracias>.btn{margin-top:26px}
+.gracias .ok{width:78px;height:78px;margin:0 auto 24px;border-radius:50%;background:var(--metal);display:grid;place-items:center;color:#141414}
+.gracias h3{font-size:clamp(30px,3.4vw,42px);margin-bottom:16px}
+.gracias p{color:var(--suave);max-width:420px;margin:0 auto 10px}
+.gracias .firma{margin-top:22px;font-weight:700;color:var(--blanco)}
+
+/* Pie */
+footer{padding:56px 0 40px;border-top:1px solid var(--linea)}
+footer .wrap{display:flex;justify-content:space-between;align-items:center;gap:24px;flex-wrap:wrap}
+footer img{height:48px;width:auto}
+footer p{color:var(--suave);font-size:14px}
+footer a{text-decoration:none;border-bottom:1px solid var(--linea)}
+footer a:hover{border-color:var(--plata)}
+
+/* Animaciones de entrada (solo si hay JS) */
+.js .rv{opacity:0;transform:translateY(28px);transition:opacity 1s var(--ease),transform 1s var(--ease);transition-delay:var(--d,0s)}
+.js .rv.in{opacity:1;transform:none}
+.js .hero h1 .w>span{transform:translateY(105%);animation:sube 1.1s var(--ease) forwards;animation-delay:calc(1.6s + var(--i)*.09s)}
+@keyframes sube{to{transform:none}}
+.js .recorrido{--p:0}.js .recorrido.in{--p:1}
+.js .recorrido .paso{opacity:0;transform:translateY(16px);transition:opacity .8s var(--ease),transform .8s var(--ease);transition-delay:calc(.25s + var(--i)*.35s)}
+.js .recorrido.in .paso{opacity:1;transform:none}
+
+@media (max-width:980px){
+  .cab{grid-template-columns:1fr}
+  .tarjetas{grid-template-columns:1fr 1fr}
+  .fases{grid-template-columns:1fr}
+  .fase,.fase+.fase{padding:30px 0;border-right:0;border-bottom:1px solid #cfccc5}
+  .fase:last-child{border-bottom:0}
+  .recorrido{grid-template-columns:1fr;gap:18px;max-width:420px}
+  .recorrido::before,.recorrido::after{left:27px;right:auto;top:28px;bottom:28px;width:1px;height:auto;transform:scaleY(var(--p,1));transform-origin:50% 0}
+  .paso{display:grid;grid-template-columns:56px 1fr;gap:4px 16px;text-align:left;align-items:center}
+  .paso .punto{margin:0;grid-row:span 2}
+  .paso small{margin:0}
+  .confianza{grid-template-columns:1fr;padding:34px 28px;gap:20px}
+  .confianza img{width:72px;height:72px}
+}
+@media (max-width:600px){
+  body{font-size:16px}
+  section.bloque,.crecer{padding:76px 0}
+  .hero{padding:100px 0 56px}
+  header .logo img{height:36px}
+  header .btn{padding:10px 16px;font-size:13px}
+  .logo-anim{width:128%;margin-left:-14%;aspect-ratio:1280/440}
+  .tarjetas,.dos{grid-template-columns:1fr}
+  .cab{margin-bottom:40px}
+  .modal-in{padding:40px 20px 26px}
+  .hero .ctas .btn{width:100%;justify-content:center}
+}
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation:none!important;transition:none!important}
+  .js .rv,.js .recorrido .paso,.js .hero h1 .w>span{opacity:1;transform:none}
+  html{scroll-behavior:auto}
+}
+</style>
+</head>
+<body>
+<div class="progreso" aria-hidden="true"></div>
+
+<header>
+  <div class="wrap">
+    <a class="logo" href="#inicio" aria-label="Bramia, inicio"><img src="assets/logo.png" width="500" height="170" alt="Bramia"></a>
+    <button class="btn btn-metal" type="button" data-encuesta>Obtener propuesta</button>
+  </div>
+</header>
+
+<main id="inicio">
+  <section class="hero">
+    <div class="wrap">
+      <p class="eyebrow rv in">Agencia especializada en Facebook Ads e Instagram Ads</p>
+      <div class="logo-anim" aria-hidden="true">
+        <video class="logo-video" src="assets/logo-animado.mp4" poster="assets/logo-final.jpg" muted playsinline autoplay preload="auto"></video>
+      </div>
+      <h1><span class="w"><span style="--i:0">Tu</span></span> <span class="w"><span style="--i:1">negocio</span></span> <span class="w"><span style="--i:2">merece</span></span><br><span class="w"><span class="metal" style="--i:3">ser visto.</span></span></h1>
+      <p class="sub rv" style="--d:2s">Creamos y gestionamos tus campañas en Facebook e Instagram y las conectamos con el resto de canales de tu negocio. <strong>Nosotros nos encargamos de que crezcas.</strong></p>
+      <div class="ctas rv" style="--d:2.2s">
+        <button class="btn btn-metal" type="button" data-encuesta>Obtener propuesta <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+        <a class="btn btn-linea" href="#metodo">Cómo trabajamos</a>
+      </div>
+      <div class="canales rv" style="--d:2.4s" aria-label="Canales">
+        <span class="pri">Facebook Ads</span><span class="pri">Instagram Ads</span><span>Web</span><span>Contenido</span>
+      </div>
+    </div>
+  </section>
+
+  <div class="banda" aria-hidden="true">
+    <div class="banda-in">
+      <p>Facebook Ads<i>✦</i>Instagram Ads<i>✦</i>Estrategia multicanal<i>✦</i>Auditoría integral<i>✦</i>Tu negocio merece ser visto<i>✦</i></p>
+      <p>Facebook Ads<i>✦</i>Instagram Ads<i>✦</i>Estrategia multicanal<i>✦</i>Auditoría integral<i>✦</i>Tu negocio merece ser visto<i>✦</i></p>
+    </div>
+  </div>
+
+  <section class="bloque" id="multicanal">
+    <div class="wrap">
+      <div class="cab">
+        <div class="rv">
+          <p class="eyebrow">Por qué multicanal</p>
+          <h2>Tu cliente no está en un solo sitio. <span class="metal">Tu negocio, tampoco.</span></h2>
+        </div>
+        <p class="rv" style="--d:.15s">Antes de decidirse, una persona ve tu anuncio, mira tu perfil, entra en tu web y te escribe. Si cada canal va por su lado, el mensaje se pierde por el camino. Si trabajan juntos, cada paso empuja al siguiente.</p>
+      </div>
+
+      <div class="recorrido rv" aria-label="Recorrido de un cliente">
+        <div class="paso" style="--i:0"><div class="punto"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg></div><b>Ve tu anuncio</b><small>Facebook, Instagram y otros</small></div>
+        <div class="paso" style="--i:1"><div class="punto"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21c1.5-4 4.5-6 8-6s6.5 2 8 6"/></svg></div><b>Conoce tu marca</b><small>Perfil y contenido</small></div>
+        <div class="paso" style="--i:2"><div class="punto"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18"/></svg></div><b>Visita tu web</b><small>Donde todo encaja</small></div>
+        <div class="paso" style="--i:3"><div class="punto"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M4 5h16v11H9l-5 4z"/></svg></div><b>Te contacta</b><small>Pide información</small></div>
+        <div class="paso" style="--i:4"><div class="punto"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12l5 5L20 7"/></svg></div><b>Te elige</b><small>Nuevo cliente</small></div>
+      </div>
+
+      <div class="tarjetas">
+        <article class="tarjeta rv"><span class="n">01 · POR QUÉ IMPORTA</span><h3>Más puntos de contacto, más confianza</h3><p>Un negocio que aparece de forma coherente en varios canales se recuerda antes y transmite más seguridad. Depender de uno solo es depender de una sola puerta.</p></article>
+        <article class="tarjeta rv" style="--d:.1s"><span class="n">02 · CÓMO LO MEJORAMOS</span><h3>Facebook e Instagram como motor</h3><p>Partimos de tus campañas en Meta y las conectamos con tu web, tu contenido y tus mensajes, para que quien ve un anuncio encuentre lo mismo en todas partes.</p></article>
+        <article class="tarjeta rv" style="--d:.2s"><span class="n">03 · EN QUÉ NOS DIFERENCIAMOS</span><h3>Estilo propio, no plantillas</h3><p>Cada creatividad se diseña para tu marca, con una imagen cuidada y un mismo tono en todos los canales. No lanzamos anuncios sueltos: construimos un sistema.</p></article>
+        <article class="tarjeta rv" style="--d:.3s"><span class="n">04 · MÁXIMO RESULTADO</span><h3>Cada canal suma al siguiente</h3><p>El anuncio despierta el interés, la web lo convierte y el seguimiento lo cierra. Medimos todo el recorrido para invertir donde más rinde tu presupuesto.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="bloque metodo" id="metodo">
+    <div class="wrap">
+      <div class="cab">
+        <div class="rv">
+          <p class="eyebrow">Cómo abordaremos tu proyecto</p>
+          <h2>Primero entendemos. <span class="metal">Después actuamos.</span></h2>
+        </div>
+        <p class="rv" style="--d:.15s">Antes de invertir un euro en anuncios, estudiamos tu negocio a fondo y te presentamos un plan claro. Así sabes desde el principio qué vamos a hacer y por qué.</p>
+      </div>
+      <div class="fases">
+        <article class="fase rv"><span class="num">01</span><h3>Auditoría integral</h3><p>Analizamos tu presencia actual para saber exactamente de dónde partimos.</p><ul><li>Redes sociales y anuncios</li><li>Web y canales de contacto</li><li>Tu competencia y tu público</li></ul></article>
+        <article class="fase rv" style="--d:.12s"><span class="num">02</span><h3>Estrategia</h3><p>Diseñamos un plan multicanal a medida, por escrito y fácil de entender.</p><ul><li>Canales y público objetivo</li><li>Mensajes y creatividades</li><li>Presupuesto y calendario</li></ul></article>
+        <article class="fase rv" style="--d:.24s"><span class="num">03</span><h3>Proyección de resultados</h3><p>Te mostramos qué podemos esperar y cómo lo vamos a medir antes de empezar.</p><ul><li>Objetivos realistas</li><li>Indicadores claros</li><li>Seguimiento y ajustes</li></ul></article>
+      </div>
+      <div class="confianza rv">
+        <img src="assets/simbolo-b.png" width="180" height="180" alt="">
+        <div>
+          <blockquote>«No te pedimos que confíes a ciegas. Te enseñamos el plan, las cifras y el porqué de cada decisión. Tu negocio está en buenas manos.»</blockquote>
+          <cite>El equipo de Bramia</cite>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="crecer">
+    <div class="wrap">
+      <h2 class="rv">Nosotros nos encargamos<br><span class="metal">de que crezcas.</span></h2>
+      <p class="rv" style="--d:.15s">Tú te centras en tu negocio. Nosotros, en que cada vez más personas lo conozcan y lo elijan.</p>
+      <button class="btn btn-metal rv" style="--d:.3s" type="button" data-encuesta>Obtener propuesta <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+    </div>
+  </section>
+
+</main>
+
+<dialog class="modal" id="encuesta" aria-labelledby="enc-tit">
+  <div class="modal-in">
+    <button class="cerrar" type="button" data-cerrar aria-label="Cerrar"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+    <p class="eyebrow">Obtener propuesta</p>
+    <h2 id="enc-tit">Cuéntanos sobre <span class="metal">tu negocio.</span></h2>
+    <p class="intro">Responde estas preguntas y estudiaremos tu caso para prepararte una propuesta a medida.</p>
+    <form id="form-propuesta" action="https://formsubmit.co/contacto@bramia.es" method="POST">
+          <div class="campo"><label for="f-nombre">Nombre y apellidos</label><input id="f-nombre" name="Nombre y apellidos" type="text" autocomplete="name" required maxlength="120"></div>
+          <div class="dos">
+            <div class="campo"><label for="f-email">Correo electrónico</label><input id="f-email" name="email" type="email" autocomplete="email" required maxlength="160"></div>
+            <div class="campo"><label for="f-tel">Número de teléfono</label><input id="f-tel" name="Teléfono" type="tel" autocomplete="tel" required maxlength="30" pattern="[\d\s\+\(\)\.\-]{6,30}"></div>
+          </div>
+          <div class="campo"><label for="f-msg">¿Qué deberíamos saber para preparar tu propuesta?</label><textarea id="f-msg" name="Qué deberíamos saber" required maxlength="3000" placeholder="Tu negocio, tus objetivos, qué has probado hasta ahora…"></textarea></div>
+          <div class="trampa" aria-hidden="true"><label for="f-honey">No rellenar</label><input id="f-honey" name="_honey" type="text" tabindex="-1" autocomplete="off"></div>
+          <input type="hidden" name="_subject" value="Nueva solicitud de propuesta · Bramia">
+          <input type="hidden" name="_template" value="table">
+          <input type="hidden" name="_captcha" value="false">
+          <button class="btn btn-metal" type="submit">Enviar <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+          <p class="legal">Usaremos tus datos solo para preparar y enviarte tu propuesta.</p>
+          <p class="error" role="alert" hidden>No hemos podido enviar tu solicitud. Inténtalo de nuevo o escríbenos a <a href="mailto:contacto@bramia.es">contacto@bramia.es</a>.</p>
+        </form>
+  </div>
+</dialog>
+
+<dialog class="modal" id="gracias" aria-labelledby="gr-tit">
+  <div class="modal-in gracias">
+    <button class="cerrar" type="button" data-cerrar aria-label="Cerrar"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+    <div class="ok"><svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M5 12l5 5L20 7"/></svg></div>
+    <h3 id="gr-tit">¡Gracias, <span class="g-nombre"></span>!</h3>
+    <p>Gracias por enviarnos tu propuesta. Nuestro equipo ya la está estudiando y te contactaremos lo antes posible.</p>
+    <p>Te hemos enviado un correo de confirmación.</p>
+    <p class="firma">El equipo de Bramia</p>
+    <button class="btn btn-metal" type="button" data-cerrar>Cerrar</button>
+  </div>
+</dialog>
+
+<footer>
+  <div class="wrap">
+    <img src="assets/logo.png" width="500" height="170" alt="Bramia" loading="lazy">
+    <p>Tu negocio merece ser visto.</p>
+    <p><a href="mailto:contacto@bramia.es">contacto@bramia.es</a> · <a href="https://bramia.es" target="_blank" rel="noopener">bramia.es</a> · © 2026 Bramia</p>
+  </div>
+</footer>
+
+<script>
+(() => {
+  if (window.top !== window.self) { try { window.top.location = window.self.location; } catch (e) { document.documentElement.style.display = 'none'; } }
+  const d = document, root = d.documentElement;
+  root.classList.add('js');
+  const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  // Aparición al hacer scroll
+  const io = new IntersectionObserver(es => es.forEach(e => {
+    if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
+  }), { threshold: .15, rootMargin: '0px 0px -40px 0px' });
+  d.querySelectorAll('.rv').forEach(el => io.observe(el));
+
+  // Barra de progreso y cabecera
+  const bar = d.querySelector('.progreso'), head = d.querySelector('header');
+  const onScroll = () => {
+    const h = root.scrollHeight - innerHeight;
+    bar.style.transform = `scaleX(${h > 0 ? scrollY / h : 0})`;
+    head.classList.toggle('solida', scrollY > 30);
+  };
+  addEventListener('scroll', onScroll, { passive: true }); onScroll();
+
+  // Animación del logo: se reproduce una vez y queda el logo final
+  const v = d.querySelector('.logo-video');
+  if (reduce) { v.removeAttribute('autoplay'); v.pause(); } else { v.play().catch(() => {}); }
+
+  // Brillo que sigue al ratón en las tarjetas
+  d.querySelectorAll('.tarjeta').forEach(t => t.addEventListener('pointermove', e => {
+    const r = t.getBoundingClientRect();
+    t.style.setProperty('--mx', (e.clientX - r.left) + 'px');
+    t.style.setProperty('--my', (e.clientY - r.top) + 'px');
+  }));
+
+  // Encuesta y gracias en ventanas emergentes
+  const encuesta = d.getElementById('encuesta'), gracias = d.getElementById('gracias');
+  d.querySelectorAll('[data-encuesta]').forEach(b => b.addEventListener('click', () => encuesta.showModal()));
+  d.querySelectorAll('[data-cerrar]').forEach(b => b.addEventListener('click', () => b.closest('dialog').close()));
+  [encuesta, gracias].forEach(m => m.addEventListener('click', e => { if (e.target === m) m.close(); }));
+
+  // Formulario de propuesta
+  const f = d.getElementById('form-propuesta');
+  const err = f.querySelector('.error'), btn = f.querySelector('button[type=submit]'), btnHtml = btn.innerHTML;
+  f.addEventListener('submit', async e => {
+    e.preventDefault();
+    if (!f.reportValidity()) return;
+    const data = Object.fromEntries(new FormData(f));
+    if (data._honey) return;
+    const completo = data['Nombre y apellidos'].trim(), nombre = completo.split(/\s+/)[0];
+    data._subject = 'Nueva solicitud de propuesta · ' + completo;
+    data._autoresponse = `Hola ${nombre}:
+
+Gracias por confiar en Bramia. Hemos recibido tu solicitud y nuestro equipo ya está estudiando tu propuesta con toda la atención que merece tu negocio.
+
+Nos pondremos en contacto contigo lo antes posible para presentarte cómo podemos ayudarte a crecer.
+
+Estás en buenas manos.
+
+Un saludo,
+El equipo de Bramia
+Tu negocio merece ser visto · bramia.es`;
+    btn.disabled = true; btn.textContent = 'Enviando…'; err.hidden = true;
+    try {
+      const r = await fetch(f.action.replace('formsubmit.co/', 'formsubmit.co/ajax/'), {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+        body: JSON.stringify(data)
+      });
+      const j = await r.json();
+      if (!r.ok || String(j.success) !== 'true') throw new Error(j.message || 'error');
+      gracias.querySelector('.g-nombre').textContent = nombre;
+      f.reset(); encuesta.close(); gracias.showModal();
+    } catch (x) {
+      err.hidden = false;
+    }
+    btn.disabled = false; btn.innerHTML = btnHtml;
+  });
+})();
+</script>
+</body>
+</html>
