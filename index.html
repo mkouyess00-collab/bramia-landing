@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
 <meta charset="utf-8">
-<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'sha256-n0jnjohH8lAfgdbwfO8h4Kz9pwjofQWrAemsImJyCms='; style-src 'self' 'unsafe-inline'; font-src 'self'; img-src 'self' data:; media-src 'self'; connect-src https://formsubmit.co; form-action https://formsubmit.co; manifest-src 'self'; base-uri 'none'; object-src 'none'; upgrade-insecure-requests">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'sha256-d+mnUCEm7VOhHrz1/VQxge4AXxPq/bhkR4nMzTEZgrU='; style-src 'self' 'unsafe-inline'; font-src 'self'; img-src 'self' data:; media-src 'self'; connect-src https://formsubmit.co; form-action https://formsubmit.co; manifest-src 'self'; base-uri 'none'; object-src 'none'; upgrade-insecure-requests">
 <meta name="referrer" content="strict-origin-when-cross-origin">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Bramia · Agencia de Facebook Ads e Instagram Ads</title>
@@ -364,7 +364,7 @@ footer a:hover{border-color:var(--plata)}
   <div class="wrap">
     <img src="assets/logo.png" width="500" height="170" alt="Bramia" loading="lazy">
     <p>Tu negocio merece ser visto.</p>
-    <p><a href="mailto:contacto@bramia.es">contacto@bramia.es</a> · <a href="https://bramia.es" target="_blank" rel="noopener">bramia.es</a> · © 2026 Bramia</p>
+    <p><a href="mailto:contacto@bramia.es">contacto@bramia.es</a> · © 2026 Bramia</p>
   </div>
 </footer>
 
@@ -437,7 +437,7 @@ Estás en buenas manos.
 
 Un saludo,
 El equipo de Bramia
-Tu negocio merece ser visto · bramia.es`;
+Tu negocio merece ser visto`;
     // FormSubmit tarda hasta un minuto en responder (y a veces da error aunque el correo llega):
     // el envío sigue por detrás y el gracias sale al momento.
     fetch(f.action.replace('formsubmit.co/', 'formsubmit.co/ajax/'), {
