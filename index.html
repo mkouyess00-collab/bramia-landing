@@ -58,7 +58,7 @@ header .btn{padding:12px 22px;font-size:14px}
 .hero .eyebrow::after{content:"";display:inline-block;width:28px;height:1px;background:var(--plata);vertical-align:middle;margin-left:12px}
 .logo-anim{position:relative;width:min(980px,100%);margin:22px auto 0;aspect-ratio:1280/400;overflow:hidden;background:var(--carbon);
   -webkit-mask:radial-gradient(60% 70% at 50% 50%,#000 55%,transparent 100%);mask:radial-gradient(60% 70% at 50% 50%,#000 55%,transparent 100%)}
-.logo-anim video,.logo-anim img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;mix-blend-mode:screen}
+.logo-anim video,.logo-anim img{pointer-events:none;position:absolute;inset:0;width:100%;height:100%;object-fit:cover;mix-blend-mode:screen}
 .hero h1{font-size:clamp(46px,8.4vw,118px);margin-top:4px}
 .hero h1 .w{display:inline-block;overflow:hidden;vertical-align:bottom;padding-bottom:.08em}
 .hero h1 .w>span{display:inline-block}
@@ -124,7 +124,7 @@ section.bloque{padding:110px 0}
 
 /* Crecer */
 .crecer{padding:120px 0;text-align:center;position:relative;overflow:hidden}
-.crecer::before{content:"";position:absolute;inset:0;background:radial-gradient(45% 60% at 50% 100%,rgba(192,192,192,.14),transparent 70%)}
+.crecer::before{content:"";position:absolute;inset:0;pointer-events:none;background:radial-gradient(45% 60% at 50% 100%,rgba(192,192,192,.14),transparent 70%)}
 .crecer h2{position:relative;font-size:clamp(48px,9vw,132px);line-height:.92}
 .crecer p{position:relative;max-width:560px;margin:26px auto 34px;color:var(--suave);font-size:18px}
 
@@ -215,7 +215,6 @@ footer a:hover{border-color:var(--plata)}
 <header>
   <div class="wrap">
     <a class="logo" href="#inicio" aria-label="Bramia, inicio"><img src="assets/logo.png" width="500" height="170" alt="Bramia"></a>
-    <button class="btn btn-metal" type="button" data-encuesta>Obtener propuesta</button>
   </div>
 </header>
 
@@ -224,7 +223,7 @@ footer a:hover{border-color:var(--plata)}
     <div class="wrap">
       <p class="eyebrow rv in">Agencia especializada en Facebook Ads e Instagram Ads</p>
       <div class="logo-anim" aria-hidden="true">
-        <video class="logo-video" src="assets/logo-animado.mp4" poster="assets/logo-final.jpg" muted playsinline autoplay preload="auto"></video>
+        <video class="logo-video" src="assets/logo-animado.mp4" poster="assets/logo-final.jpg" muted playsinline autoplay preload="auto" disablepictureinpicture disableremoteplayback controlslist="nodownload nofullscreen noremoteplayback" tabindex="-1"></video>
       </div>
       <h1><span class="w"><span style="--i:0">Tu</span></span> <span class="w"><span style="--i:1">negocio</span></span> <span class="w"><span style="--i:2">merece</span></span><br><span class="w"><span class="metal" style="--i:3">ser visto.</span></span></h1>
       <p class="sub rv" style="--d:2s">Creamos y gestionamos tus campañas en Facebook Ads, Instagram Ads y otros, y las conectamos con el resto de canales de tu negocio. <strong>Nosotros nos encargamos de que crezcas.</strong></p>
