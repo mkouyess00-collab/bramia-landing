@@ -2,152 +2,227 @@
 <html lang="es">
 <head>
 <meta charset="utf-8">
-<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'sha256-d+mnUCEm7VOhHrz1/VQxge4AXxPq/bhkR4nMzTEZgrU='; style-src 'self' 'unsafe-inline'; font-src 'self'; img-src 'self' data:; media-src 'self'; connect-src https://formsubmit.co; form-action https://formsubmit.co; manifest-src 'self'; base-uri 'none'; object-src 'none'; upgrade-insecure-requests">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'sha256-CM3VRk3O/udHkNecRrsmtzdcvWA/6KunuehzkqUm3R0='; style-src 'self' 'unsafe-inline'; font-src 'self'; img-src 'self' data:; media-src 'self'; connect-src https://formsubmit.co; form-action https://formsubmit.co; manifest-src 'self'; base-uri 'none'; object-src 'none'; upgrade-insecure-requests">
 <meta name="referrer" content="strict-origin-when-cross-origin">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Bramia · Agencia de Facebook Ads e Instagram Ads</title>
-<meta name="description" content="Bramia, agencia especializada en Facebook Ads e Instagram Ads con enfoque multicanal. Auditoría integral, estrategia y proyección de resultados. Tu negocio merece ser visto.">
-<meta property="og:title" content="Bramia · Agencia de Facebook Ads e Instagram Ads">
-<meta property="og:description" content="Tu negocio merece ser visto. Nos encargamos de que crezcas.">
+<title>Bramia · Gestión de redes sociales y páginas web</title>
+<meta name="description" content="Bramia lleva las redes sociales de tu negocio y crea tu página web. Un solo equipo, un mismo estilo. Tu negocio merece ser visto.">
+<meta property="og:title" content="Bramia · Gestión de redes sociales y páginas web">
+<meta property="og:description" content="Tu negocio merece ser visto. Nosotros nos encargamos de que crezcas.">
 <meta property="og:image" content="https://mkouyess00-collab.github.io/bramia-landing/assets/logo-final.jpg">
-<meta name="theme-color" content="#141416">
+<meta name="theme-color" content="#1C1C1C">
 <link rel="icon" href="assets/favicon.png">
 <link rel="preload" href="assets/fonts/archivo-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
 <style>
 @font-face{font-family:"Archivo";src:url(assets/fonts/archivo-latin-wght-normal.woff2) format("woff2");font-weight:100 900;font-display:swap}
 @font-face{font-family:"Manrope";src:url(assets/fonts/manrope-latin-wght-normal.woff2) format("woff2");font-weight:200 800;font-display:swap}
 :root{
-  --carbon:#141416;--grafito:#1F2024;--blanco:#F4F7F9;--piedra:#C6D7E0;--plata:#B0E0E6;--rojo:#E3343F;
-  --grad-rojo:linear-gradient(135deg,#FF5A5F 0%,#E3343F 45%,#B3172F 100%);
-  --grad-mixto:linear-gradient(90deg,#B0E0E6 0%,#E3343F 100%);
-  --linea:rgba(245,244,240,.12);--suave:rgba(245,244,240,.66);
-  --metal:linear-gradient(100deg,#86c3cd 0%,#eaf8fa 28%,#b0e0e6 46%,#f4fbfc 64%,#86c3cd 100%);
+  --carbon:#1C1C1C;--negro:#111111;--grafito:#393939;--blanco:#F5F4F0;--piedra:#D8D6D1;--plata:#C0C0C0;
+  --claro:#EAE7E0;--claro2:#F7F6F2;--tinta:#343630;
+  --linea:rgba(245,244,240,.12);--suave:rgba(245,244,240,.62);
+  --metal:linear-gradient(100deg,#8e8e8e 0%,#f5f4f0 28%,#a9a9a9 46%,#ececea 64%,#8e8e8e 100%);
   --ease:cubic-bezier(.22,1,.36,1);
 }
 *{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
-body{background:var(--carbon);color:var(--blanco);font:400 17px/1.6 "Manrope",system-ui,sans-serif;overflow-x:hidden}
-img,video{display:block;max-width:100%}
-a{color:inherit}
-.wrap{width:min(1180px,100% - 40px);margin-inline:auto}
-h1,h2,h3{font-family:"Archivo",sans-serif;font-weight:800;letter-spacing:-.03em;line-height:1}
-.metal{background:var(--metal);background-size:220% 100%;-webkit-background-clip:text;background-clip:text;color:transparent;animation:brillo 7s linear infinite}
+body{background:var(--negro);color:var(--blanco);font:400 16px/1.6 "Manrope",system-ui,sans-serif;overflow-x:hidden}
+img,video,canvas{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+button{font:inherit;color:inherit}
+.wrap{width:min(1240px,100% - 40px);margin-inline:auto}
+h1,h2,h3{font-family:"Archivo",sans-serif;font-weight:800;letter-spacing:-.035em;line-height:.95}
+.metal{background:var(--metal);background-size:220% 100%;-webkit-background-clip:text;background-clip:text;color:transparent;animation:brillo 8s linear infinite}
 @keyframes brillo{to{background-position:-220% 0}}
-.eyebrow{font:600 12px/1.2 "Manrope";letter-spacing:.22em;text-transform:uppercase;color:var(--plata)}
-.eyebrow::before{content:"";display:inline-block;width:28px;height:1px;background:var(--plata);vertical-align:middle;margin-right:12px}
+.etq{display:inline-flex;align-items:center;gap:10px;font:600 12px/1 "Manrope";letter-spacing:.16em;text-transform:uppercase}
+.etq::before{content:"";width:7px;height:7px;border-radius:50%;background:currentColor}
+.figuras{position:absolute;inset:0;width:100%;height:100%;pointer-events:none}
+.flecha{display:inline-grid;place-items:center;width:18px;height:18px}
 
 /* Botones */
-.btn{display:inline-flex;align-items:center;gap:12px;padding:17px 30px;border-radius:999px;font:700 15px/1 "Manrope";letter-spacing:.02em;text-decoration:none;border:0;cursor:pointer;transition:transform .4s var(--ease),box-shadow .4s var(--ease),background .3s}
-.btn-metal{background:var(--grad-rojo);color:#fff;box-shadow:0 10px 40px -12px rgba(227,52,63,.6),inset 0 1px 0 rgba(255,255,255,.25)}
-.btn-metal:hover{transform:translateY(-2px);filter:brightness(1.08);box-shadow:0 18px 50px -12px rgba(227,52,63,.75),inset 0 1px 0 rgba(255,255,255,.25)}
-.btn-metal svg{transition:transform .4s var(--ease)}
-.btn-metal:hover svg{transform:translateX(4px)}
-.btn-linea{color:var(--blanco);border:1px solid var(--linea);background:transparent}
-.btn-linea:hover{border-color:var(--plata)}
-.btn:focus-visible,input:focus-visible,textarea:focus-visible{outline:2px solid var(--plata);outline-offset:3px}
+.btn{display:inline-flex;align-items:center;gap:12px;padding:15px 22px;border-radius:12px;font:700 14px/1 "Manrope";border:0;cursor:pointer;transition:transform .45s var(--ease),background .3s,color .3s,box-shadow .45s var(--ease)}
+.btn:hover{transform:translateY(-2px)}
+.btn .flecha{transition:transform .45s var(--ease)}
+.btn:hover .flecha{transform:translate(3px,-3px)}
+.btn-oscuro{background:var(--carbon);color:var(--blanco);box-shadow:0 12px 30px -14px rgba(0,0,0,.6)}
+.btn-oscuro:hover{background:#000}
+.btn-metal{background:var(--metal);background-size:220% 100%;color:#141414;animation:brillo 8s linear infinite;box-shadow:0 14px 40px -14px rgba(230,230,230,.5),inset 0 1px 0 rgba(255,255,255,.7)}
+.btn:focus-visible,a:focus-visible,input:focus-visible,textarea:focus-visible{outline:2px solid var(--plata);outline-offset:3px}
 
 /* Cabecera */
-.progreso{position:fixed;top:0;left:0;right:0;height:3px;background:var(--grad-mixto);transform-origin:0 50%;transform:scaleX(0);z-index:60}
-header{position:fixed;inset:0 0 auto;z-index:50;transition:background .4s,border-color .4s;border-bottom:1px solid transparent}
-header.solida{background:rgba(28,28,28,.82);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-color:var(--linea)}
-header .wrap{display:flex;align-items:center;justify-content:space-between;height:76px}
-header .logo img{height:44px;width:auto}
-nav{display:flex;gap:6px}
-nav a{font-size:14.5px;font-weight:600;color:var(--piedra);text-decoration:none;padding:10px 14px;border-radius:999px;transition:color .3s,background .3s}
-nav a:hover,nav a.activa{color:var(--blanco);background:rgba(245,244,240,.07)}
-.menu-btn{display:none;width:44px;height:44px;border-radius:50%;border:1px solid var(--linea);background:transparent;cursor:pointer;position:relative}
+.progreso{position:fixed;top:0;left:0;right:0;height:2px;background:var(--metal);transform-origin:0 50%;transform:scaleX(0);z-index:60}
+header{position:fixed;inset:0 0 auto;z-index:50;padding:18px 0;transition:background .4s,padding .4s,border-color .4s;border-bottom:1px solid transparent}
+header.solida{background:rgba(17,17,17,.8);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);padding:12px 0;border-color:var(--linea)}
+header .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px}
+.izq{display:flex;align-items:center;gap:10px}
+.marca{display:grid;place-items:center;height:44px;padding:0 14px;border-radius:12px;background:var(--carbon)}
+.marca img{height:30px;width:auto}
+nav{display:flex;gap:2px;padding:4px;border-radius:12px;background:rgba(255,255,255,.92);box-shadow:0 8px 24px -14px rgba(0,0,0,.35)}
+nav a{font-size:14px;font-weight:600;color:#3d3d3a;padding:9px 16px;border-radius:9px;transition:background .3s,color .3s}
+nav a:hover{color:#000}
+nav a.activa{background:var(--carbon);color:var(--blanco)}
+.menu-btn{display:none;width:44px;height:44px;border-radius:12px;border:0;background:var(--carbon);cursor:pointer;position:relative}
 .menu-btn span{position:absolute;left:13px;right:13px;height:1.5px;background:var(--blanco);transition:transform .35s var(--ease)}
-.menu-btn span:first-child{top:17px}.menu-btn span:last-child{top:25px}
-.menu-btn[aria-expanded="true"] span:first-child{transform:translateY(4px) rotate(45deg)}
-.menu-btn[aria-expanded="true"] span:last-child{transform:translateY(-4px) rotate(-45deg)}
-main section{scroll-margin-top:72px}
-header .btn{padding:12px 22px;font-size:14px}
+.menu-btn span:first-child{top:18px}.menu-btn span:last-child{top:25px}
+.menu-btn[aria-expanded="true"] span:first-child{transform:translateY(3.5px) rotate(45deg)}
+.menu-btn[aria-expanded="true"] span:last-child{transform:translateY(-3.5px) rotate(-45deg)}
+main section{scroll-margin-top:70px}
 
-/* Portada */
-.hero{position:relative;padding:118px 0 72px;text-align:center;overflow:hidden}
-.hero::before{content:"";position:absolute;inset:-20% -10% auto;height:120%;background:radial-gradient(38% 40% at 22% 30%,rgba(176,224,230,.16),transparent 70%),radial-gradient(34% 38% at 82% 62%,rgba(227,52,63,.14),transparent 70%),radial-gradient(50% 45% at 50% 38%,rgba(176,224,230,.06),transparent 70%);filter:blur(10px);pointer-events:none}
-.hero .eyebrow::after{content:"";display:inline-block;width:28px;height:1px;background:var(--plata);vertical-align:middle;margin-left:12px}
-.logo-anim{position:relative;width:min(980px,100%);margin:22px auto 0;aspect-ratio:1280/400;overflow:hidden}
-.logo-anim video,.logo-anim img{pointer-events:none;position:absolute;inset:0;width:100%;height:100%;object-fit:cover;mix-blend-mode:screen}
-.hero h1{font-size:clamp(46px,8.4vw,118px);margin-top:4px}
-.hero h1 .w{display:inline-block;overflow:hidden;vertical-align:bottom;padding-bottom:.08em}
-.hero h1 .w>span{display:inline-block}
-.hero .sub{max-width:640px;margin:24px auto 0;font-size:clamp(17px,1.5vw,20px);color:var(--suave)}
-.hero .sub strong{color:var(--blanco);font-weight:700}
-.hero .ctas{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin-top:34px}
-.canales{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-top:40px}
-.canales span{font-size:13px;font-weight:600;color:var(--piedra);border:1px solid var(--linea);border-radius:999px;padding:8px 16px}
-.canales span.pri{color:var(--blanco);border-color:rgba(176,224,230,.5);background:rgba(176,224,230,.08)}
+/* Portada (clara) */
+.hero{position:relative;background:radial-gradient(70% 60% at 50% 40%,var(--claro2),var(--claro) 70%,#dedad2);color:var(--negro);overflow:hidden;padding:104px 0 28px}
+.hero-grid{position:relative;display:grid;grid-template-columns:1fr minmax(340px,440px) 1fr;gap:28px;min-height:min(760px,calc(100svh - 132px))}
+.h-izq{display:flex;flex-direction:column;justify-content:space-between;padding-top:46px;gap:28px}
+.hero h1{font-size:clamp(44px,5.1vw,84px);text-transform:uppercase;color:var(--negro)}
+.hero h1 .gris{color:#75746d}
+.hero h1 .l{display:block;overflow:hidden;padding-bottom:.04em}
+.hero h1 .l>span{display:inline-block}
+.sobre{max-width:320px;margin-top:26px}
+.sobre .etq{color:#1b1b1b;font-size:11px}
+.sobre p{margin:10px 0 22px;color:#4d4c47;font-size:15px;line-height:1.55}
+.minis{display:grid;grid-template-columns:1fr 1fr;gap:10px;max-width:380px}
+.mini{position:relative;border-radius:16px;background:var(--carbon);color:var(--blanco);padding:16px;min-height:150px;display:flex;flex-direction:column;justify-content:space-between;overflow:hidden;transition:transform .5s var(--ease)}
+.mini:hover{transform:translateY(-4px)}
+.mini b{font:800 22px/1 "Archivo";letter-spacing:-.02em}
+.mini small{color:var(--suave);font-size:12px;line-height:1.4}
+.mini .ico{width:34px;height:34px;border-radius:10px;display:grid;place-items:center;background:rgba(255,255,255,.08);border:1px solid var(--linea)}
+.mini .ico svg{width:18px;height:18px}
+.mini.claro{background:#fff;color:var(--negro);box-shadow:0 18px 40px -26px rgba(0,0,0,.5)}
+.mini.claro small{color:#6b6a65}
+.mini.claro .ico{background:#f1efea;border-color:#e2dfd8}
+
+.h-centro{position:relative;border-radius:22px 22px 0 0;background:#000;overflow:hidden;align-self:end;height:100%;min-height:560px;box-shadow:0 40px 80px -40px rgba(0,0,0,.55);display:flex;flex-direction:column}
+.h-centro .barra{display:flex;align-items:center;justify-content:space-between;margin:22px 22px 0;padding:14px 16px;border-radius:12px;background:rgba(255,255,255,.06);border:1px solid var(--linea);font:600 12px/1 "Manrope";letter-spacing:.18em;text-transform:uppercase;color:var(--piedra)}
+.h-centro .barra i{width:22px;height:8px;border-block:1.5px solid var(--piedra)}
+.h-centro video,.h-centro .poster{width:100%;flex:1;min-height:0;object-fit:contain;transform:scale(1.5);pointer-events:none}
+.h-centro .pie{display:flex;justify-content:space-around;padding:0 18px 26px;font:600 15px "Manrope";color:var(--blanco)}
+.h-centro .pie span{opacity:.9}
+
+.h-der{display:flex;flex-direction:column;justify-content:space-between;align-items:flex-end;padding-top:46px;text-align:right;gap:24px}
+.reloj{font-size:13px;line-height:1.35;color:#3d3d3a}
+.reloj b{display:block;font-weight:700;color:var(--negro);text-transform:capitalize}
+.chip{display:inline-flex;align-items:center;gap:10px;padding:8px 16px 8px 8px;border-radius:999px;background:#fff;font-size:13px;font-weight:600;box-shadow:0 10px 24px -16px rgba(0,0,0,.4)}
+.chip i{width:24px;height:24px;border-radius:50%;background:var(--carbon);display:grid;place-items:center}
+.chip i::after{content:"";width:8px;height:8px;border-radius:50%;border:1.5px solid #fff}
+.dispo{font-size:13px;color:#3d3d3a}
+.dispo span{display:block}
+.dispo span:last-child::before{content:"";display:inline-block;width:6px;height:6px;border-radius:50%;background:#2fbf71;margin-right:8px;box-shadow:0 0 0 4px rgba(47,191,113,.18);animation:latido 2s ease-in-out infinite}
+@keyframes latido{50%{box-shadow:0 0 0 8px rgba(47,191,113,0)}}
+.tarjeta-b{width:100%;max-width:330px;text-align:left}
+.tarjeta-b .cab{display:flex;justify-content:space-between;align-items:end;margin-bottom:8px}
+.tarjeta-b .cab small{display:block;font-size:11px;color:#6b6a65}
+.tarjeta-b .cab b{font-size:16px}
+.tarjeta-b .cab em{font-style:normal;font-size:11px;font-weight:700;background:var(--carbon);color:#fff;border-radius:999px;padding:4px 9px}
+.tarjeta-b a{position:relative;display:block;border-radius:16px;overflow:hidden;background:var(--carbon);aspect-ratio:16/10}
+.tarjeta-b a img{position:absolute;width:44%;left:50%;top:50%;transform:translate(-50%,-50%) rotate(-8deg);transition:transform .8s var(--ease)}
+.tarjeta-b a:hover img{transform:translate(-50%,-50%) rotate(0) scale(1.06)}
+.tarjeta-b a .ir{position:absolute;right:14px;bottom:14px;width:40px;height:40px;border-radius:50%;background:rgba(255,255,255,.14);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);display:grid;place-items:center;color:#fff}
+
+/* Franja */
+.franja{border-bottom:1px solid var(--linea);background:var(--negro)}
+.franja .wrap{display:flex;justify-content:space-between;align-items:center;height:72px;font:600 12px/1 "Manrope";letter-spacing:.16em;text-transform:uppercase;color:var(--suave)}
+.franja b{color:var(--blanco);font-weight:700}
+.franja .baja{display:inline-flex;align-items:center;gap:10px;color:var(--blanco)}
+.franja .baja i{width:18px;height:18px;border-radius:50%;background:var(--blanco);display:grid;place-items:center;animation:bota 1.8s var(--ease) infinite}
+.franja .baja i::after{content:"";width:5px;height:5px;border-right:1.5px solid #111;border-bottom:1.5px solid #111;transform:translateY(-1px) rotate(45deg)}
+@keyframes bota{50%{transform:translateY(4px)}}
+
+/* Manifiesto */
+.manifiesto{position:relative;padding:110px 0 100px;text-align:center;overflow:hidden}
+.manifiesto p.grande{position:relative;max-width:900px;margin:0 auto;font:500 clamp(28px,3.4vw,46px)/1.22 "Manrope";letter-spacing:-.025em}
+.manifiesto p.grande .p{opacity:.16;transition:opacity .25s linear}
+.manifiesto p.chico{position:relative;margin-top:48px;color:var(--suave);font-size:16px}
+.manifiesto p.chico b{color:var(--blanco);font-weight:500}
+
+/* Servicios */
+.bloque{position:relative;padding:120px 0;overflow:hidden}
+.cabecera{position:relative;display:grid;grid-template-columns:1fr 1fr;gap:24px 60px;align-items:end;margin-bottom:56px}
+.cabecera h2{font-size:clamp(42px,5.4vw,80px);margin-top:18px}
+.cabecera p{color:var(--suave);font-size:17px;max-width:470px}
+.cabecera .etq{color:var(--plata)}
+.servicios{position:relative;display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.servicio{position:relative;border:1px solid var(--linea);border-radius:24px;padding:38px 38px 34px;background:linear-gradient(160deg,rgba(57,57,57,.55),rgba(28,28,28,.4) 60%);overflow:hidden;transition:border-color .4s,transform .6s var(--ease)}
+.servicio:hover{border-color:rgba(192,192,192,.4);transform:translateY(-6px)}
+.servicio::after{content:"";position:absolute;inset:0;background:radial-gradient(300px 220px at var(--mx,70%) var(--my,0%),rgba(230,230,230,.11),transparent 70%);pointer-events:none}
+.servicio .n{display:flex;justify-content:space-between;align-items:center;font:700 13px "Manrope";letter-spacing:.16em;color:var(--plata)}
+.servicio .n span:last-child{width:52px;height:52px;border-radius:14px;display:grid;place-items:center;background:var(--metal);color:#141414}
+.servicio .n svg{width:24px;height:24px}
+.servicio h3{font-size:clamp(32px,3.2vw,46px);margin:46px 0 14px}
+.servicio>p{color:var(--suave);max-width:440px}
+.servicio ul{list-style:none;margin-top:28px;border-top:1px solid var(--linea)}
+.servicio li{display:flex;align-items:center;gap:14px;padding:14px 0;border-bottom:1px solid var(--linea);font-weight:600;font-size:15px}
+.servicio li::before{content:"";width:16px;height:1px;background:var(--plata);flex:none;transition:width .45s var(--ease)}
+.servicio li:hover::before{width:28px}
 
 /* Banda */
-.banda{border-block:1px solid var(--linea);background:linear-gradient(90deg,#141416 0%,#22252b 50%,#141416 100%);overflow:hidden;padding:20px 0}
-.banda-in{display:flex;width:max-content;animation:desliza 38s linear infinite}
-.banda-in p{font:800 clamp(22px,2.6vw,34px)/1 "Archivo";letter-spacing:-.02em;white-space:nowrap;padding-right:28px}
-.banda-in p i{font-style:normal;color:var(--rojo);padding:0 28px}
+.banda{overflow:hidden;border-block:1px solid var(--linea);background:var(--carbon);padding:22px 0}
+.banda-in{display:flex;width:max-content;animation:desliza 40s linear infinite}
+.banda-in p{font:800 clamp(24px,3vw,40px)/1 "Archivo";letter-spacing:-.02em;white-space:nowrap;padding-right:30px;text-transform:uppercase}
+.banda-in p i{font-style:normal;color:var(--plata);padding:0 30px}
+.banda-in p span{color:transparent;-webkit-text-stroke:1px rgba(245,244,240,.6)}
 @keyframes desliza{to{transform:translateX(-50%)}}
 
-/* Secciones */
-section.bloque{padding:110px 0}
-.cab{display:grid;grid-template-columns:1.15fr 1fr;gap:28px 56px;align-items:end;margin-bottom:56px}
-.cab h2{font-size:clamp(36px,5vw,66px);margin-top:16px}
-.cab p{color:var(--suave);font-size:18px;max-width:520px}
-
-/* Recorrido multicanal */
-.recorrido{position:relative;display:grid;grid-template-columns:repeat(5,1fr);gap:12px;margin-bottom:56px}
-.recorrido::before{content:"";position:absolute;left:10%;right:10%;top:27px;height:1px;background:var(--linea)}
-.recorrido::after{content:"";position:absolute;left:10%;right:10%;top:27px;height:2px;background:var(--grad-mixto);transform-origin:0 50%;transform:scaleX(var(--p,1));transition:transform 2.2s var(--ease) .2s}
-.paso{position:relative;z-index:1;text-align:center}
-.paso .punto{width:56px;height:56px;margin:0 auto 14px;border-radius:50%;display:grid;place-items:center;background:var(--carbon);border:1px solid rgba(176,224,230,.45);color:var(--plata)}
-.paso .punto svg{width:22px;height:22px}
-.paso b{display:block;font-weight:700;font-size:15px}
-.paso small{display:block;color:var(--suave);font-size:13px;line-height:1.4;margin-top:4px}
-.paso:last-child .punto{background:var(--grad-rojo);box-shadow:0 0 0 6px rgba(227,52,63,.15),0 10px 30px -8px rgba(227,52,63,.7);color:#fff;border:0}
-
-.tarjetas{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
-.tarjeta{position:relative;padding:30px 26px 32px;border:1px solid var(--linea);border-radius:20px;background:linear-gradient(180deg,rgba(57,57,57,.55),rgba(57,57,57,.15));overflow:hidden;transition:border-color .4s,transform .5s var(--ease)}
-.tarjeta:hover{border-color:rgba(176,224,230,.45);transform:translateY(-4px)}
-.tarjeta::after{content:"";position:absolute;inset:0;background:radial-gradient(240px 160px at var(--mx,50%) var(--my,0%),rgba(176,224,230,.14),rgba(227,52,63,.06) 45%,transparent 75%);opacity:0;transition:opacity .4s;pointer-events:none}
-.tarjeta:hover::after{opacity:1}
-.tarjeta .n{font:700 13px/1 "Manrope";color:var(--plata);letter-spacing:.14em}
-.tarjeta h3{font-size:24px;margin:18px 0 12px;letter-spacing:-.02em;line-height:1.1}
-.tarjeta p{color:var(--suave);font-size:15.5px}
-
 /* Método */
-.metodo{position:relative;overflow:hidden;background:radial-gradient(40% 55% at 100% 0%,rgba(227,52,63,.20),transparent 70%),radial-gradient(45% 60% at 0% 100%,rgba(255,255,255,.55),transparent 70%),linear-gradient(160deg,#C6EAEE 0%,#B0E0E6 45%,#93CBD5 100%);color:var(--carbon)}
-.metodo .eyebrow{color:#2c4a50}.metodo .eyebrow::before{background:#2c4a50}
-.metodo .cab p{color:#27383c}
-.metodo .metal{background-image:var(--grad-rojo);background-size:100% 100%;animation:none}
-.fases{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid rgba(20,20,22,.18)}
-.fase{padding:34px 34px 38px 0;border-right:1px solid rgba(20,20,22,.18)}
-.fase+.fase{padding-left:34px}
-.fase:last-child{border-right:0;padding-right:0}
-.fase .num{font:800 clamp(64px,7vw,96px)/.9 "Archivo";letter-spacing:-.05em;color:transparent;-webkit-text-stroke:1.5px var(--rojo)}
-.fase h3{font-size:28px;margin:20px 0 12px;letter-spacing:-.02em}
-.fase p{color:#27383c;font-size:16px}
-.fase ul{list-style:none;margin-top:16px;display:grid;gap:6px}
-.fase li{font-size:14px;font-weight:600;color:var(--carbon);padding-left:20px;position:relative}
-.fase li::before{content:"";position:absolute;left:0;top:.62em;width:10px;height:1px;background:var(--rojo)}
-.confianza{margin-top:56px;display:grid;grid-template-columns:auto 1fr;gap:34px;align-items:center;background:radial-gradient(60% 120% at 100% 100%,rgba(227,52,63,.22),transparent 70%),linear-gradient(135deg,#1d1f24 0%,#141416 100%);color:var(--blanco);border-radius:24px;padding:44px 52px;box-shadow:0 30px 60px -30px rgba(20,20,22,.6)}
-.confianza img{width:96px;height:96px}
-.confianza blockquote{font:600 clamp(22px,2.4vw,31px)/1.3 "Archivo";letter-spacing:-.02em}
-.confianza cite{display:block;margin-top:14px;font:600 13px "Manrope";letter-spacing:.18em;text-transform:uppercase;color:var(--plata);font-style:normal}
+.metodo{background:var(--claro2);color:var(--negro)}
+.metodo .cabecera p{color:#55554f}
+.metodo .cabecera .etq{color:#1b1b1b}
+.fases{position:relative;display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.fase{position:relative;background:#fff;border-radius:22px;padding:32px 30px 34px;box-shadow:0 30px 60px -44px rgba(0,0,0,.45);overflow:hidden;transition:transform .6s var(--ease)}
+.fase:hover{transform:translateY(-6px)}
+.fase .num{display:flex;justify-content:space-between;align-items:start}
+.fase .num b{font:800 clamp(64px,6vw,92px)/.8 "Archivo";letter-spacing:-.05em;color:transparent;-webkit-text-stroke:1.5px #9b9a95}
+.fase .num i{font-style:normal;font-size:11px;font-weight:700;background:var(--carbon);color:#fff;border-radius:999px;padding:5px 10px}
+.fase h3{font-size:28px;margin:34px 0 10px;letter-spacing:-.02em;line-height:1.05}
+.fase p{color:#55554f;font-size:15px}
+.fase .barra{height:3px;border-radius:3px;background:#ebe8e1;margin-top:26px;overflow:hidden}
+.fase .barra span{display:block;height:100%;width:100%;background:var(--carbon);transform-origin:0 50%;transform:scaleX(0);transition:transform 1.4s var(--ease) .3s}
+.fase.in .barra span{transform:scaleX(var(--w))}
+.confianza{position:relative;margin-top:18px;display:grid;grid-template-columns:auto 1fr;gap:34px;align-items:center;background:var(--carbon);color:var(--blanco);border-radius:22px;padding:40px 48px;overflow:hidden}
+.confianza img{width:92px;height:92px}
+.confianza blockquote{font:600 clamp(21px,2.3vw,30px)/1.3 "Archivo";letter-spacing:-.02em}
+.confianza cite{display:block;margin-top:14px;font:600 12px "Manrope";letter-spacing:.18em;text-transform:uppercase;color:var(--plata);font-style:normal}
 
-/* Crecer */
-.crecer{padding:120px 0;text-align:center;position:relative;overflow:hidden}
-.crecer::before{content:"";position:absolute;inset:0;pointer-events:none;background:radial-gradient(45% 60% at 50% 100%,rgba(227,52,63,.22),transparent 70%),radial-gradient(35% 45% at 15% 10%,rgba(176,224,230,.10),transparent 70%);filter:blur(8px)}
-.crecer h2{position:relative;font-size:clamp(48px,9vw,132px);line-height:.92}
-.crecer p{position:relative;max-width:560px;margin:26px auto 34px;color:var(--suave);font-size:18px}
+/* Por qué Bramia */
+.porque{position:relative;display:grid;grid-template-columns:1.05fr 1fr 1fr 1fr;gap:14px;border:1px solid var(--linea);border-radius:26px;padding:16px}
+.porque .intro{padding:22px 18px}
+.porque .intro h2{font:500 clamp(30px,3vw,42px)/1.08 "Manrope";letter-spacing:-.03em}
+.porque .intro h2 span{color:var(--plata)}
+.porque .intro p{color:var(--suave);font-size:14px;margin-top:22px}
+.pq{position:relative;border-radius:18px;padding:22px;min-height:260px;display:flex;flex-direction:column;justify-content:space-between;overflow:hidden;transition:transform .6s var(--ease)}
+.pq:hover{transform:translateY(-6px)}
+.pq b{font:800 26px/1.05 "Archivo";letter-spacing:-.02em}
+.pq p{font-size:14px;line-height:1.5}
+.pq.pq1{background:var(--claro);color:var(--negro)}
+.pq.pq1 p{color:#55554f}
+.pq.pq2{background:var(--grafito)}
+.pq.pq2 p{color:var(--suave)}
+.pq.pq3{background:#000;border:1px solid var(--linea)}
+.pq.pq3 p{color:var(--suave)}
+.pq .ico{width:44px;height:44px;border-radius:12px;display:grid;place-items:center;background:var(--metal);color:#141414}
+.pq .ico svg{width:22px;height:22px}
+
+/* Final */
+.final{position:relative;padding:150px 0 140px;text-align:center;overflow:hidden;background:radial-gradient(50% 60% at 50% 100%,rgba(192,192,192,.12),transparent 70%)}
+.final h2{position:relative;font-size:clamp(50px,8.6vw,128px);line-height:.92}
+.final p{position:relative;max-width:540px;margin:28px auto 36px;color:var(--suave);font-size:18px}
+.final .btn{position:relative}
+
+footer{border-top:1px solid var(--linea);padding:44px 0 36px}
+footer .wrap{display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap}
+footer img{height:44px;width:auto}
+footer p{color:var(--suave);font-size:14px}
+footer a{border-bottom:1px solid var(--linea)}
+footer a:hover{border-color:var(--plata)}
 
 /* Encuesta y gracias (ventanas emergentes) */
 html:has(dialog[open]){overflow:hidden}
-.modal{width:min(620px,100% - 32px);max-height:calc(100dvh - 32px);margin:auto;padding:0;overflow:auto;background:radial-gradient(70% 50% at 100% 0%,rgba(176,224,230,.08),transparent 70%),linear-gradient(180deg,#1a1b1f 0%,#141416 100%);color:var(--blanco);border:1px solid rgba(176,224,230,.28);border-radius:24px;box-shadow:0 50px 120px -30px rgba(0,0,0,.8)}
+.modal{width:min(620px,100% - 32px);max-height:calc(100dvh - 32px);margin:auto;padding:0;overflow:auto;background:var(--carbon);color:var(--blanco);border:1px solid rgba(192,192,192,.28);border-radius:24px;box-shadow:0 50px 120px -30px rgba(0,0,0,.8)}
 .modal::backdrop{background:rgba(12,12,12,.74);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px)}
 .modal[open]{animation:aparece .55s var(--ease)}
 .modal[open]::backdrop{animation:funde .4s ease}
 @keyframes aparece{from{opacity:0;transform:translateY(24px) scale(.97)}}
 @keyframes funde{from{opacity:0}}
 .modal-in{position:relative;padding:44px 40px 36px}
-.modal h2{font-size:clamp(30px,4vw,42px);margin:14px 0 12px}
+.modal h2{font-size:clamp(30px,4vw,42px);margin:14px 0 12px;line-height:1}
+.modal .etq{color:var(--plata)}
 .modal .intro{color:var(--suave);margin-bottom:26px;font-size:16px}
 .cerrar{position:absolute;top:16px;right:16px;width:40px;height:40px;border-radius:50%;display:grid;place-items:center;background:rgba(245,244,240,.06);border:1px solid var(--linea);color:var(--blanco);cursor:pointer;transition:border-color .3s,transform .4s var(--ease)}
 .cerrar:hover{border-color:var(--plata);transform:rotate(90deg)}
@@ -159,67 +234,63 @@ html:has(dialog[open]){overflow:hidden}
 .dos{display:grid;grid-template-columns:1fr 1fr;gap:16px}
 .trampa{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
 .modal form .btn{width:100%;justify-content:center;margin-top:6px}
-.modal form .btn:disabled{opacity:.7;cursor:wait}
 .legal{font-size:12.5px;color:rgba(245,244,240,.5);margin-top:14px;line-height:1.5}
-.error{margin-top:14px;font-size:14px;color:#f0b4ab}
 .gracias{text-align:center;padding-top:52px}
-.gracias>.btn{margin-top:26px}
-.gracias .ok{width:78px;height:78px;margin:0 auto 24px;border-radius:50%;background:var(--grad-rojo);display:grid;place-items:center;color:#fff;box-shadow:0 0 0 8px rgba(227,52,63,.14),0 16px 40px -10px rgba(227,52,63,.7)}
+.gracias .ok{width:78px;height:78px;margin:0 auto 24px;border-radius:50%;background:var(--metal);display:grid;place-items:center;color:#141414}
 .gracias h3{font-size:clamp(30px,3.4vw,42px);margin-bottom:16px}
 .gracias p{color:var(--suave);max-width:420px;margin:0 auto 10px}
 .gracias .firma{margin-top:22px;font-weight:700;color:var(--blanco)}
+.gracias>.btn{margin-top:26px}
 
-/* Pie */
-footer{padding:56px 0 40px;border-top:1px solid var(--linea)}
-footer .wrap{display:flex;justify-content:space-between;align-items:center;gap:24px;flex-wrap:wrap}
-footer img{height:48px;width:auto}
-footer p{color:var(--suave);font-size:14px}
-footer a{text-decoration:none;border-bottom:1px solid var(--linea)}
-footer a:hover{border-color:var(--plata)}
-
-/* Animaciones de entrada (solo si hay JS) */
-.js .rv{opacity:0;transform:translateY(28px);transition:opacity 1s var(--ease),transform 1s var(--ease);transition-delay:var(--d,0s)}
+/* Animaciones de entrada (solo con JS) */
+.js .rv{opacity:0;transform:translateY(30px);transition:opacity 1s var(--ease),transform 1s var(--ease);transition-delay:var(--d,0s)}
 .js .rv.in{opacity:1;transform:none}
-.js .hero h1 .w>span{transform:translateY(105%);animation:sube 1.1s var(--ease) forwards;animation-delay:calc(1.6s + var(--i)*.09s)}
+.js .hero h1 .l>span{transform:translateY(105%);animation:sube 1.1s var(--ease) forwards;animation-delay:calc(.25s + var(--i)*.1s)}
+.js .h-centro{clip-path:inset(100% 0 0 0 round 22px 22px 0 0);animation:abre 1.4s var(--ease) .15s forwards}
+.js .h-izq .sobre,.js .minis,.js .h-der>*{opacity:0;transform:translateY(20px);animation:entra 1s var(--ease) forwards;animation-delay:calc(.7s + var(--i,0)*.12s)}
 @keyframes sube{to{transform:none}}
-.js .recorrido{--p:0}.js .recorrido.in{--p:1}
-.js .recorrido .paso{opacity:0;transform:translateY(16px);transition:opacity .8s var(--ease),transform .8s var(--ease);transition-delay:calc(.25s + var(--i)*.35s)}
-.js .recorrido.in .paso{opacity:1;transform:none}
+@keyframes abre{to{clip-path:inset(0 0 0 0 round 22px 22px 0 0)}}
+@keyframes entra{to{opacity:1;transform:none}}
 
-@media (max-width:980px){
+@media (max-width:1080px){
+  .hero-grid{grid-template-columns:1fr 1fr;min-height:0}
+  .h-izq{padding-top:20px}
+  .h-centro{grid-row:span 2;min-height:520px;border-radius:22px}
+  .h-der{grid-column:1;align-items:flex-start;text-align:left;padding-top:0}
+  .porque{grid-template-columns:1fr 1fr}
+}
+@media (max-width:860px){
   .menu-btn{display:block}
-  nav{position:absolute;top:76px;left:0;right:0;flex-direction:column;gap:0;padding:8px 20px 18px;background:var(--carbon);border-bottom:1px solid var(--linea);opacity:0;visibility:hidden;transform:translateY(-8px);transition:opacity .3s,transform .4s var(--ease),visibility 0s .4s}
+  nav{position:absolute;top:calc(100% + 8px);left:20px;right:20px;flex-direction:column;padding:8px;opacity:0;visibility:hidden;transform:translateY(-8px);transition:opacity .3s,transform .4s var(--ease),visibility 0s .4s}
   nav.abierto{opacity:1;visibility:visible;transform:none;transition:opacity .3s,transform .4s var(--ease)}
-  nav a{font-size:18px;padding:14px 4px;border-radius:0;border-bottom:1px solid var(--linea)}
-  nav a:last-child{border-bottom:0}
-  .cab{grid-template-columns:1fr}
-  .tarjetas{grid-template-columns:1fr 1fr}
-  .fases{grid-template-columns:1fr}
-  .fase,.fase+.fase{padding:30px 0;border-right:0;border-bottom:1px solid rgba(20,20,22,.18)}
-  .fase:last-child{border-bottom:0}
-  .recorrido{grid-template-columns:1fr;gap:18px;max-width:420px}
-  .recorrido::before,.recorrido::after{left:27px;right:auto;top:28px;bottom:28px;width:1px;height:auto;transform:scaleY(var(--p,1));transform-origin:50% 0}
-  .paso{display:grid;grid-template-columns:56px 1fr;gap:4px 16px;text-align:left;align-items:center}
-  .paso .punto{margin:0;grid-row:span 2}
-  .paso small{margin:0}
-  .confianza{grid-template-columns:1fr;padding:34px 28px;gap:20px}
-  .confianza img{width:72px;height:72px}
+  nav a{font-size:17px;padding:14px 16px}
+  header .btn{display:none}
+  .hero-grid{grid-template-columns:1fr}
+  .h-centro{grid-row:auto;min-height:440px;order:2}
+  .h-izq{order:1}
+  .h-der{order:3;grid-column:auto}
+  .cabecera,.servicios,.fases{grid-template-columns:1fr}
+  .confianza{grid-template-columns:1fr;padding:32px 26px;gap:18px}
+  .confianza img{width:68px;height:68px}
 }
 @media (max-width:600px){
-  body{font-size:16px}
-  section.bloque,.crecer{padding:76px 0}
-  .hero{padding:100px 0 56px}
-  header .logo img{height:36px}
-  header .btn{padding:10px 16px;font-size:13px}
-  .logo-anim{width:128%;margin-left:-14%;aspect-ratio:1280/440}
-  .tarjetas,.dos{grid-template-columns:1fr}
-  .cab{margin-bottom:40px}
+  .bloque{padding:80px 0}
+  .manifiesto{padding:100px 0 90px}
+  .final{padding:100px 0}
+  .franja .wrap>span:last-child{display:none}
+  .servicio{padding:28px 22px}
+  .servicio h3{margin-top:30px}
+  .porque{grid-template-columns:1fr;padding:10px}
+  .pq{min-height:200px}
+  .dos{grid-template-columns:1fr}
   .modal-in{padding:40px 20px 26px}
-  .hero .ctas .btn{width:100%;justify-content:center}
+  .minis{max-width:none}
 }
 @media (prefers-reduced-motion:reduce){
   *,*::before,*::after{animation:none!important;transition:none!important}
-  .js .rv,.js .recorrido .paso,.js .hero h1 .w>span{opacity:1;transform:none}
+  .js .rv,.js .hero h1 .l>span,.js .h-izq .sobre,.js .minis,.js .h-der>*{opacity:1;transform:none}
+  .js .h-centro{clip-path:none}
+  .manifiesto p.grande .p{opacity:1}
   html{scroll-behavior:auto}
 }
 </style>
@@ -229,124 +300,181 @@ footer a:hover{border-color:var(--plata)}
 
 <header>
   <div class="wrap">
-    <a class="logo" href="#inicio" aria-label="Bramia, inicio"><img src="assets/logo.png" width="500" height="170" alt="Bramia"></a>
+    <div class="izq">
+      <a class="marca" href="#inicio" aria-label="Bramia, inicio"><img src="assets/logo.png" width="500" height="170" alt="Bramia"></a>
+      <nav id="menu" aria-label="Secciones">
+        <a href="#inicio">Inicio</a>
+        <a href="#servicios">Servicios</a>
+        <a href="#metodo">Cómo trabajamos</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+    </div>
+    <a class="btn btn-oscuro" href="#contacto">Contacto <span class="flecha"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M7 17L17 7M8 7h9v9"/></svg></span></a>
     <button class="menu-btn" type="button" aria-expanded="false" aria-controls="menu" aria-label="Abrir menú"><span></span><span></span></button>
-    <nav id="menu" aria-label="Secciones">
-      <a href="#inicio">Inicio</a>
-      <a href="#multicanal">Por qué multicanal</a>
-      <a href="#metodo">Cómo trabajamos</a>
-      <a href="#contacto">Contacto</a>
-    </nav>
   </div>
 </header>
 
 <main>
   <section class="hero" id="inicio">
-    <div class="wrap">
-      <p class="eyebrow rv in">Agencia especializada en Facebook Ads e Instagram Ads</p>
-      <div class="logo-anim" aria-hidden="true">
+    <canvas class="figuras" data-tono="claro" aria-hidden="true"></canvas>
+    <div class="wrap hero-grid">
+      <div class="h-izq">
+        <div>
+          <h1><span class="l"><span style="--i:0">Tu negocio</span></span><span class="l"><span style="--i:1">merece</span></span><span class="l"><span class="gris" style="--i:2">ser visto.</span></span></h1>
+          <div class="sobre">
+            <span class="etq">Bramia</span>
+            <p>Llevamos las redes sociales de tu negocio y creamos tu página web. Un solo equipo y un mismo estilo en todo lo que ven tus clientes.</p>
+            <button class="btn btn-oscuro" type="button" data-encuesta>Obtener propuesta <span class="flecha"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M7 17L17 7M8 7h9v9"/></svg></span></button>
+          </div>
+        </div>
+        <div class="minis" style="--i:2">
+          <a class="mini" href="#servicios">
+            <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg></span>
+            <span><b>Redes</b><br><small>Gestión de redes sociales</small></span>
+          </a>
+          <a class="mini claro" href="#servicios">
+            <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18M7 6.5h.01M10 6.5h.01"/></svg></span>
+            <span><b>Webs</b><br><small>Creación de páginas web</small></span>
+          </a>
+        </div>
+      </div>
+
+      <div class="h-centro" aria-hidden="true">
+        <div class="barra"><span>Bramia</span><i></i></div>
         <video class="logo-video" src="assets/logo-animado.mp4" poster="assets/logo-final.jpg" muted playsinline autoplay preload="auto" disablepictureinpicture disableremoteplayback controlslist="nodownload nofullscreen noremoteplayback" tabindex="-1"></video>
+        <div class="pie"><span>Redes sociales</span><span>Páginas web</span></div>
       </div>
-      <h1><span class="w"><span style="--i:0">Tu</span></span> <span class="w"><span style="--i:1">negocio</span></span> <span class="w"><span style="--i:2">merece</span></span><br><span class="w"><span class="metal" style="--i:3">ser visto.</span></span></h1>
-      <p class="sub rv" style="--d:2s">Creamos y gestionamos tus campañas en Facebook Ads, Instagram Ads y otros, y las conectamos con el resto de canales de tu negocio. <strong>Nosotros nos encargamos de que crezcas.</strong></p>
-      <div class="ctas rv" style="--d:2.2s">
-        <button class="btn btn-metal" type="button" data-encuesta>Obtener propuesta <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
-        <a class="btn btn-linea" href="#metodo">Cómo trabajamos</a>
+
+      <div class="h-der">
+        <p class="reloj" style="--i:0"><b class="r-dia">&nbsp;</b><span class="r-hora">&nbsp;</span></p>
+        <span class="chip" style="--i:1"><i></i>Nos encargamos de que crezcas</span>
+        <p class="dispo" style="--i:2"><span>Estamos disponibles</span><span>para ti</span></p>
+        <div class="tarjeta-b" style="--i:3">
+          <div class="cab"><span><small>Un solo equipo</small><b>Redes + Web</b></span><em>Bramia</em></div>
+          <a href="#servicios" aria-label="Ver servicios">
+            <img src="assets/simbolo-b.png" width="180" height="180" alt="">
+            <span class="ir"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M7 17L17 7M8 7h9v9"/></svg></span>
+          </a>
+        </div>
       </div>
-      <div class="canales rv" style="--d:2.4s" aria-label="Canales">
-        <span class="pri">Facebook Ads</span><span class="pri">Instagram Ads</span><span>Web</span><span>Contenido</span>
+    </div>
+  </section>
+
+  <div class="franja">
+    <div class="wrap"><span><b>Bramia</b> · Redes y webs</span><span class="baja"><i></i>Desliza</span><span>Tu negocio merece ser visto</span></div>
+  </div>
+
+  <section class="manifiesto">
+    <canvas class="figuras" data-tono="oscuro" aria-hidden="true"></canvas>
+    <div class="wrap">
+      <p class="grande" data-palabras>Creemos que una marca fuerte no se construye solo con una imagen bonita. Se construye con constancia, estrategia y un mismo estilo en cada publicación y en cada página.</p>
+      <p class="chico">Redes sociales y páginas web, de la idea a la publicación.<br><b>Hechas para negocios que quieren crecer.</b></p>
+    </div>
+  </section>
+
+  <section class="bloque" id="servicios">
+    <canvas class="figuras" data-tono="oscuro" aria-hidden="true"></canvas>
+    <div class="wrap">
+      <div class="cabecera">
+        <div class="rv"><span class="etq">Servicios</span><h2>Dos servicios. <span class="metal">Un mismo estilo.</span></h2></div>
+        <p class="rv" style="--d:.12s">Tus redes y tu web son la primera impresión de tu negocio. Nos encargamos de las dos para que se vean igual de bien y digan lo mismo.</p>
+      </div>
+      <div class="servicios">
+        <article class="servicio rv">
+          <div class="n"><span>01 · Gestión de redes sociales</span><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg></span></div>
+          <h3>Llevamos tus redes sociales</h3>
+          <p>También se conoce como <em>community management</em>: nos ocupamos de tus redes para que tu negocio esté presente cada semana, con contenido cuidado y con tu estilo.</p>
+          <ul>
+            <li>Plan y calendario de publicaciones</li>
+            <li>Diseño de publicaciones, historias y reels</li>
+            <li>Imagen y vídeo con el estilo de tu marca</li>
+            <li>Publicación y gestión de tus perfiles</li>
+          </ul>
+        </article>
+        <article class="servicio rv" style="--d:.12s">
+          <div class="n"><span>02 · Creación de páginas web</span><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18M7 6.5h.01M10 6.5h.01"/></svg></span></div>
+          <h3>Creamos tu página web</h3>
+          <p>Creamos, mejoramos, mantenemos y automatizamos la web de tu negocio. Diseñada a medida, nada de plantillas.</p>
+          <ul>
+            <li>Diseño a medida con tu marca</li>
+            <li>Adaptada a todos los dispositivos</li>
+            <li>Mantenimiento y mejoras</li>
+            <li>Automatizaciones para ahorrarte trabajo</li>
+          </ul>
+        </article>
       </div>
     </div>
   </section>
 
   <div class="banda" aria-hidden="true">
     <div class="banda-in">
-      <p>Facebook Ads<i>✦</i>Instagram Ads<i>✦</i>Estrategia multicanal<i>✦</i>Auditoría integral<i>✦</i>Tu negocio merece ser visto<i>✦</i></p>
-      <p>Facebook Ads<i>✦</i>Instagram Ads<i>✦</i>Estrategia multicanal<i>✦</i>Auditoría integral<i>✦</i>Tu negocio merece ser visto<i>✦</i></p>
+      <p>Redes sociales<i>✦</i><span>Páginas web</span><i>✦</i>Contenido<i>✦</i><span>Diseño a medida</span><i>✦</i>Tu negocio merece ser visto<i>✦</i></p>
+      <p>Redes sociales<i>✦</i><span>Páginas web</span><i>✦</i>Contenido<i>✦</i><span>Diseño a medida</span><i>✦</i>Tu negocio merece ser visto<i>✦</i></p>
     </div>
   </div>
 
-  <section class="bloque" id="multicanal">
-    <div class="wrap">
-      <div class="cab">
-        <div class="rv">
-          <p class="eyebrow">Por qué multicanal</p>
-          <h2>Tu cliente no está en un solo sitio. <span class="metal">Tu negocio, tampoco.</span></h2>
-        </div>
-        <p class="rv" style="--d:.15s">Antes de decidirse, una persona ve tu anuncio, mira tu perfil, entra en tu web y te escribe. Si cada canal va por su lado, el mensaje se pierde por el camino. Si trabajan juntos, cada paso empuja al siguiente.</p>
-      </div>
-
-      <div class="recorrido rv" aria-label="Recorrido de un cliente">
-        <div class="paso" style="--i:0"><div class="punto"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg></div><b>Ve tu anuncio</b><small>Facebook, Instagram y otros</small></div>
-        <div class="paso" style="--i:1"><div class="punto"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21c1.5-4 4.5-6 8-6s6.5 2 8 6"/></svg></div><b>Conoce tu marca</b><small>Perfil y contenido</small></div>
-        <div class="paso" style="--i:2"><div class="punto"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18"/></svg></div><b>Visita tu web</b><small>Donde todo encaja</small></div>
-        <div class="paso" style="--i:3"><div class="punto"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M4 5h16v11H9l-5 4z"/></svg></div><b>Te contacta</b><small>Pide información</small></div>
-        <div class="paso" style="--i:4"><div class="punto"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12l5 5L20 7"/></svg></div><b>Te elige</b><small>Nuevo cliente</small></div>
-      </div>
-
-      <div class="tarjetas">
-        <article class="tarjeta rv"><span class="n">01 · POR QUÉ IMPORTA</span><h3>Más puntos de contacto, más confianza</h3><p>Un negocio que aparece de forma coherente en varios canales se recuerda antes y transmite más seguridad. Depender de uno solo es depender de una sola puerta.</p></article>
-        <article class="tarjeta rv" style="--d:.1s"><span class="n">02 · CÓMO LO MEJORAMOS</span><h3>Facebook e Instagram como motor</h3><p>Partimos de tus campañas en Meta y las conectamos con tu web, tu contenido y tus mensajes, para que quien ve un anuncio encuentre lo mismo en todas partes.</p></article>
-        <article class="tarjeta rv" style="--d:.2s"><span class="n">03 · EN QUÉ NOS DIFERENCIAMOS</span><h3>Estilo propio, no plantillas</h3><p>Cada creatividad se diseña para tu marca, con una imagen cuidada y un mismo tono en todos los canales. No lanzamos anuncios sueltos: construimos un sistema.</p></article>
-        <article class="tarjeta rv" style="--d:.3s"><span class="n">04 · MÁXIMO RESULTADO</span><h3>Cada canal suma al siguiente</h3><p>El anuncio despierta el interés, la web lo convierte y el seguimiento lo cierra. Medimos todo el recorrido para invertir donde más rinde tu presupuesto.</p></article>
-      </div>
-    </div>
-  </section>
-
   <section class="bloque metodo" id="metodo">
+    <canvas class="figuras" data-tono="claro" aria-hidden="true"></canvas>
     <div class="wrap">
-      <div class="cab">
-        <div class="rv">
-          <p class="eyebrow">Cómo abordaremos tu proyecto</p>
-          <h2>Primero entendemos. <span class="metal">Después actuamos.</span></h2>
-        </div>
-        <p class="rv" style="--d:.15s">Antes de invertir un euro en anuncios, estudiamos tu negocio a fondo y te presentamos un plan claro. Así sabes desde el principio qué vamos a hacer y por qué.</p>
+      <div class="cabecera">
+        <div class="rv"><span class="etq">Cómo trabajamos</span><h2>Primero entendemos. Después actuamos.</h2></div>
+        <p class="rv" style="--d:.12s">Antes de publicar nada, estudiamos tu negocio y te presentamos un plan claro. Así sabes desde el principio qué vamos a hacer y por qué.</p>
       </div>
       <div class="fases">
-        <article class="fase rv"><span class="num">01</span><h3>Auditoría integral</h3><p>Analizamos tu presencia actual para saber exactamente de dónde partimos.</p><ul><li>Redes sociales y anuncios</li><li>Web y canales de contacto</li><li>Tu competencia y tu público</li></ul></article>
-        <article class="fase rv" style="--d:.12s"><span class="num">02</span><h3>Estrategia</h3><p>Diseñamos un plan multicanal a medida, por escrito y fácil de entender.</p><ul><li>Canales y público objetivo</li><li>Mensajes y creatividades</li><li>Presupuesto y calendario</li></ul></article>
-        <article class="fase rv" style="--d:.24s"><span class="num">03</span><h3>Proyección de resultados</h3><p>Te mostramos qué podemos esperar y cómo lo vamos a medir antes de empezar.</p><ul><li>Objetivos realistas</li><li>Indicadores claros</li><li>Seguimiento y ajustes</li></ul></article>
+        <article class="fase rv" style="--w:.33"><div class="num"><b>01</b><i>Paso 1</i></div><h3>Auditoría</h3><p>Revisamos tus redes, tu web y tu competencia para saber exactamente de dónde partimos.</p><div class="barra"><span></span></div></article>
+        <article class="fase rv" style="--d:.12s;--w:.66"><div class="num"><b>02</b><i>Paso 2</i></div><h3>Estrategia</h3><p>Definimos qué publicar, cómo debe ser tu web y el estilo que lo une todo. Un plan por escrito.</p><div class="barra"><span></span></div></article>
+        <article class="fase rv" style="--d:.24s;--w:1"><div class="num"><b>03</b><i>Paso 3</i></div><h3>Puesta en marcha</h3><p>Creamos, publicamos y medimos. Ajustamos sobre la marcha para que tu negocio siga creciendo.</p><div class="barra"><span></span></div></article>
       </div>
       <div class="confianza rv">
+        <canvas class="figuras" data-tono="oscuro" data-pocas aria-hidden="true"></canvas>
         <img src="assets/simbolo-b.png" width="180" height="180" alt="">
-        <div>
-          <blockquote>«No te pedimos que confíes a ciegas. Te enseñamos el plan, las cifras y el porqué de cada decisión. Tu negocio está en buenas manos.»</blockquote>
-          <cite>El equipo de Bramia</cite>
-        </div>
+        <div><blockquote>«No te pedimos que confíes a ciegas. Te enseñamos el plan y el porqué de cada decisión. Tu negocio está en buenas manos.»</blockquote><cite>El equipo de Bramia</cite></div>
       </div>
     </div>
   </section>
 
-  <section class="crecer" id="contacto">
+  <section class="bloque">
+    <canvas class="figuras" data-tono="oscuro" aria-hidden="true"></canvas>
     <div class="wrap">
-      <h2 class="rv">Nosotros nos encargamos<br><span class="metal">de que crezcas.</span></h2>
-      <p class="rv" style="--d:.15s">Tú te centras en tu negocio. Nosotros, en que cada vez más personas lo conozcan y lo elijan.</p>
-      <button class="btn btn-metal rv" style="--d:.3s" type="button" data-encuesta>Obtener propuesta <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+      <div class="porque rv">
+        <div class="intro"><h2>Por qué <span>Bramia</span> ✳</h2><p>Lo que nos diferencia de llevar las redes por un lado y la web por otro.</p></div>
+        <div class="pq pq1"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 3l2.6 5.6 6 .7-4.5 4.1 1.2 6L12 16.4 6.7 19.4l1.2-6L3.4 9.3l6-.7z"/></svg></span><div><b>Estilo propio, no plantillas</b><p>Cada diseño se hace para tu marca.</p></div></div>
+        <div class="pq pq2"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="8" cy="12" r="5"/><circle cx="16" cy="12" r="5"/></svg></span><div><b>Un solo equipo</b><p>Redes y web con la misma voz y la misma imagen.</p></div></div>
+        <div class="pq pq3"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M4 5h16v11H9l-5 4z"/></svg></span><div><b>Trato cercano</b><p>Hablas siempre con las personas que hacen tu trabajo.</p></div></div>
+      </div>
     </div>
   </section>
 
+  <section class="final" id="contacto">
+    <canvas class="figuras" data-tono="oscuro" aria-hidden="true"></canvas>
+    <div class="wrap">
+      <h2 class="rv">Nosotros nos encargamos<br><span class="metal">de que crezcas.</span></h2>
+      <p class="rv" style="--d:.12s">Cuéntanos sobre tu negocio y te preparamos una propuesta para tus redes, tu web o las dos.</p>
+      <button class="btn btn-metal rv" style="--d:.24s" type="button" data-encuesta>Obtener propuesta <span class="flecha"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M7 17L17 7M8 7h9v9"/></svg></span></button>
+    </div>
+  </section>
 </main>
 
 <dialog class="modal" id="encuesta" aria-labelledby="enc-tit">
   <div class="modal-in">
     <button class="cerrar" type="button" data-cerrar aria-label="Cerrar"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
-    <p class="eyebrow">Obtener propuesta</p>
+    <span class="etq">Obtener propuesta</span>
     <h2 id="enc-tit">Cuéntanos sobre <span class="metal">tu negocio.</span></h2>
     <p class="intro">Responde estas preguntas y estudiaremos tu caso para prepararte una propuesta a medida.</p>
     <form id="form-propuesta" action="https://formsubmit.co/contacto@bramia.es" method="POST">
-          <div class="campo"><label for="f-nombre">Nombre y apellidos</label><input id="f-nombre" name="Nombre y apellidos" type="text" autocomplete="name" required maxlength="120"></div>
-          <div class="dos">
-            <div class="campo"><label for="f-email">Correo electrónico</label><input id="f-email" name="email" type="email" autocomplete="email" required maxlength="160"></div>
-            <div class="campo"><label for="f-tel">Número de teléfono</label><input id="f-tel" name="Teléfono" type="tel" autocomplete="tel" required maxlength="30" pattern="[\d\s\+\(\)\.\-]{6,30}"></div>
-          </div>
-          <div class="campo"><label for="f-msg">¿Qué deberíamos saber para preparar tu propuesta?</label><textarea id="f-msg" name="Qué deberíamos saber" required maxlength="3000" placeholder="Tu negocio, tus objetivos, qué has probado hasta ahora…"></textarea></div>
-          <div class="trampa" aria-hidden="true"><label for="f-honey">No rellenar</label><input id="f-honey" name="_honey" type="text" tabindex="-1" autocomplete="off"></div>
-          <input type="hidden" name="_subject" value="Nueva solicitud de propuesta · Bramia">
-          <input type="hidden" name="_template" value="table">
-          <input type="hidden" name="_captcha" value="false">
-          <button class="btn btn-metal" type="submit">Enviar <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
-          <p class="legal">Usaremos tus datos solo para preparar y enviarte tu propuesta.</p>
-        </form>
+      <div class="campo"><label for="f-nombre">Nombre y apellidos</label><input id="f-nombre" name="Nombre y apellidos" type="text" autocomplete="name" required maxlength="120"></div>
+      <div class="dos">
+        <div class="campo"><label for="f-email">Correo electrónico</label><input id="f-email" name="email" type="email" autocomplete="email" required maxlength="160"></div>
+        <div class="campo"><label for="f-tel">Número de teléfono</label><input id="f-tel" name="Teléfono" type="tel" autocomplete="tel" required maxlength="30" pattern="[\d\s\+\(\)\.\-]{6,30}"></div>
+      </div>
+      <div class="campo"><label for="f-msg">¿Qué deberíamos saber para preparar tu propuesta?</label><textarea id="f-msg" name="Qué deberíamos saber" required maxlength="3000" placeholder="Tu negocio, tus redes, tu web, tus objetivos…"></textarea></div>
+      <div class="trampa" aria-hidden="true"><label for="f-honey">No rellenar</label><input id="f-honey" name="_honey" type="text" tabindex="-1" autocomplete="off"></div>
+      <input type="hidden" name="_subject" value="Nueva solicitud de propuesta · Bramia">
+      <input type="hidden" name="_template" value="table">
+      <input type="hidden" name="_captcha" value="false">
+      <button class="btn btn-metal" type="submit">Enviar <span class="flecha"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M7 17L17 7M8 7h9v9"/></svg></span></button>
+      <p class="legal">Usaremos tus datos solo para preparar y enviarte tu propuesta.</p>
+    </form>
   </div>
 </dialog>
 
@@ -376,6 +504,7 @@ footer a:hover{border-color:var(--plata)}
   const d = document, root = d.documentElement;
   root.classList.add('js');
   const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const fino = matchMedia('(pointer: fine)').matches;
 
   // Aparición al hacer scroll
   const io = new IntersectionObserver(es => es.forEach(e => {
@@ -383,18 +512,27 @@ footer a:hover{border-color:var(--plata)}
   }), { threshold: .15, rootMargin: '0px 0px -40px 0px' });
   d.querySelectorAll('.rv').forEach(el => io.observe(el));
 
-  // Barra de progreso y cabecera
+  // Cabecera, barra de progreso y manifiesto que se ilumina palabra a palabra
   const bar = d.querySelector('.progreso'), head = d.querySelector('header');
+  const man = d.querySelector('[data-palabras]');
+  man.innerHTML = man.textContent.trim().split(/\s+/).map(w => `<span class="p">${w}</span>`).join(' ');
+  const pals = [...man.querySelectorAll('.p')];
   const onScroll = () => {
     const h = root.scrollHeight - innerHeight;
     bar.style.transform = `scaleX(${h > 0 ? scrollY / h : 0})`;
     head.classList.toggle('solida', scrollY > 30);
+    if (!reduce) {
+      const r = man.getBoundingClientRect();
+      const p = Math.min(1, Math.max(0, (innerHeight * .85 - r.top) / (r.height + innerHeight * .35)));
+      const n = p * pals.length;
+      pals.forEach((w, i) => { w.style.opacity = Math.min(1, Math.max(.16, n - i)); });
+    }
   };
   addEventListener('scroll', onScroll, { passive: true }); onScroll();
 
   // Menú: abrir en móvil, cerrar al elegir y marcar la sección en pantalla
   const nav = d.getElementById('menu'), menuBtn = d.querySelector('.menu-btn');
-  const abrirMenu = v => { nav.classList.toggle('abierto', v); menuBtn.setAttribute('aria-expanded', v); head.classList.toggle('solida', v || scrollY > 30); };
+  const abrirMenu = v => { nav.classList.toggle('abierto', v); menuBtn.setAttribute('aria-expanded', v); };
   menuBtn.addEventListener('click', () => abrirMenu(!nav.classList.contains('abierto')));
   nav.querySelectorAll('a').forEach(a => a.addEventListener('click', () => abrirMenu(false)));
   const enlaces = [...nav.querySelectorAll('a')];
@@ -403,16 +541,97 @@ footer a:hover{border-color:var(--plata)}
   }), { rootMargin: '-45% 0px -50% 0px' });
   enlaces.forEach(a => ioNav.observe(d.querySelector(a.hash)));
 
-  // Animación del logo: se reproduce una vez y queda el logo final
+  // Reloj en vivo
+  const rDia = d.querySelector('.r-dia'), rHora = d.querySelector('.r-hora');
+  const reloj = () => {
+    const ahora = new Date();
+    rDia.textContent = ahora.toLocaleDateString('es-ES', { weekday: 'long' });
+    rHora.textContent = ahora.toLocaleTimeString('es-ES', { hour: '2-digit', minute: '2-digit' }) + ' · ' + ahora.toLocaleDateString('es-ES', { day: 'numeric', month: 'long', year: 'numeric' });
+  };
+  reloj(); setInterval(reloj, 20000);
+
+  // Animación del logo
   const v = d.querySelector('.logo-video');
   if (reduce) { v.removeAttribute('autoplay'); v.pause(); } else { v.play().catch(() => {}); }
 
-  // Brillo que sigue al ratón en las tarjetas
-  d.querySelectorAll('.tarjeta').forEach(t => t.addEventListener('pointermove', e => {
+  // Brillo que sigue al ratón en los servicios
+  d.querySelectorAll('.servicio').forEach(t => t.addEventListener('pointermove', e => {
     const r = t.getBoundingClientRect();
     t.style.setProperty('--mx', (e.clientX - r.left) + 'px');
     t.style.setProperty('--my', (e.clientY - r.top) + 'px');
   }));
+
+  // Figuras 3D de líneas en el fondo: giran, flotan y siguen al ratón y al scroll
+  const PHI = (1 + Math.sqrt(5)) / 2;
+  const unir = (vs, largo) => { const ar = []; for (let i = 0; i < vs.length; i++) for (let j = i + 1; j < vs.length; j++) { const dx = vs[i][0] - vs[j][0], dy = vs[i][1] - vs[j][1], dz = vs[i][2] - vs[j][2]; if (Math.abs(Math.hypot(dx, dy, dz) - largo) < .01) ar.push([i, j]); } return ar; };
+  const norm = vs => { const m = Math.max(...vs.map(p => Math.hypot(...p))); return vs.map(p => p.map(c => c / m)); };
+  const icosa = () => { const vs = []; for (const a of [-1, 1]) for (const b of [-PHI, PHI]) vs.push([0, a, b], [a, b, 0], [b, 0, a]); return { v: norm(vs), a: unir(vs, 2) }; };
+  const octa = () => { const vs = [[1,0,0],[-1,0,0],[0,1,0],[0,-1,0],[0,0,1],[0,0,-1]]; return { v: vs, a: unir(vs, Math.SQRT2) }; };
+  const cubo = () => { const vs = []; for (const x of [-1, 1]) for (const y of [-1, 1]) for (const z of [-1, 1]) vs.push([x, y, z]); return { v: norm(vs), a: unir(vs, 2) }; };
+  const anillos = (R, r, nu, nv) => { const vs = [], ar = []; for (let i = 0; i < nu; i++) for (let j = 0; j < nv; j++) { const u = i / nu * Math.PI * 2, w = j / nv * Math.PI * 2; vs.push([(R + r * Math.cos(w)) * Math.cos(u), r * Math.sin(w), (R + r * Math.cos(w)) * Math.sin(u)]); const k = i * nv + j; ar.push([k, i * nv + (j + 1) % nv], [k, ((i + 1) % nu) * nv + j]); } return { v: norm(vs), a: ar }; };
+  const esfera = (nl, nm) => { const vs = [], ar = []; for (let i = 1; i < nl; i++) for (let j = 0; j < nm; j++) { const t = i / nl * Math.PI, f = j / nm * Math.PI * 2; vs.push([Math.sin(t) * Math.cos(f), Math.cos(t), Math.sin(t) * Math.sin(f)]); const k = (i - 1) * nm + j; ar.push([k, (i - 1) * nm + (j + 1) % nm]); if (i < nl - 1) ar.push([k, k + nm]); } return { v: vs, a: ar }; };
+  const modelos = [icosa(), anillos(1, .38, 22, 9), octa(), esfera(9, 16), cubo(), icosa()];
+  const raton = { x: 0, y: 0, tx: 0, ty: 0 };
+  if (fino) addEventListener('pointermove', e => { raton.tx = e.clientX / innerWidth - .5; raton.ty = e.clientY / innerHeight - .5; }, { passive: true });
+
+  const escenas = [...d.querySelectorAll('canvas.figuras')].map((cv, n) => {
+    const ctx = cv.getContext('2d'), claro = cv.dataset.tono === 'claro';
+    const pocas = 'pocas' in cv.dataset;
+    const lugares = pocas ? [[.92, .3, .5]] : [[.1, .25, .9], [.88, .2, .7], [.78, .82, 1], [.2, .85, .6], [.5, .1, .45]];
+    const figs = lugares.slice(0, innerWidth < 700 ? 3 : 5).map((l, i) => ({
+      m: modelos[(i + n * 2) % modelos.length], x: l[0], y: l[1], s: l[2],
+      rx: Math.random() * 6, ry: Math.random() * 6, vx: .0018 + Math.random() * .002, vy: .0025 + Math.random() * .002,
+      f: Math.random() * 6, prof: .4 + Math.random() * .8
+    }));
+    const esc = { cv, ctx, claro, figs, visible: false, w: 0, h: 0 };
+    const medir = () => { const dpr = Math.min(devicePixelRatio || 1, 2); esc.w = cv.clientWidth; esc.h = cv.clientHeight; cv.width = esc.w * dpr; cv.height = esc.h * dpr; ctx.setTransform(dpr, 0, 0, dpr, 0, 0); };
+    esc.medir = medir; medir();
+    return esc;
+  });
+  addEventListener('resize', () => escenas.forEach(e => { e.medir(); if (reduce) dibujar(e, 0); }));
+  const ioFig = new IntersectionObserver(es => es.forEach(e => { const s = escenas.find(x => x.cv === e.target); s.visible = e.isIntersecting; }));
+  escenas.forEach(s => ioFig.observe(s.cv));
+
+  function dibujar(s, t) {
+    const { ctx, w, h, claro } = s;
+    ctx.clearRect(0, 0, w, h);
+    const base = Math.min(w, h);
+    for (const f of s.figs) {
+      const ax = f.rx + t * f.vx * 60 + scrollY * .0012 + raton.y * .6 * f.prof;
+      const ay = f.ry + t * f.vy * 60 + raton.x * .8 * f.prof;
+      const ca = Math.cos(ax), sa = Math.sin(ax), cb = Math.cos(ay), sb = Math.sin(ay);
+      const R = base * .2 * f.s;
+      const cx = f.x * w - raton.x * 40 * f.prof, cy = f.y * h + Math.sin(t * .6 + f.f) * 14 - raton.y * 30 * f.prof;
+      const pts = f.m.v.map(([x, y, z]) => {
+        const y1 = y * ca - z * sa, z1 = y * sa + z * ca;
+        const x2 = x * cb + z1 * sb, z2 = -x * sb + z1 * cb;
+        const p = 3 / (3 + z2);
+        return [cx + x2 * R * p, cy + y1 * R * p, z2];
+      });
+      ctx.lineWidth = 1;
+      for (const [i, j] of f.m.a) {
+        const z = (pts[i][2] + pts[j][2]) / 2;
+        const a = (claro ? .15 : .26) * (.45 + (1 - z) * .4);
+        ctx.strokeStyle = claro ? `rgba(28,28,28,${a})` : `rgba(215,215,212,${a})`;
+        ctx.beginPath(); ctx.moveTo(pts[i][0], pts[i][1]); ctx.lineTo(pts[j][0], pts[j][1]); ctx.stroke();
+      }
+      for (const p of pts) {
+        if (p[2] > -.2) continue;
+        ctx.fillStyle = claro ? 'rgba(28,28,28,.35)' : 'rgba(240,240,236,.55)';
+        ctx.fillRect(p[0] - 1, p[1] - 1, 2, 2);
+      }
+    }
+  }
+  if (reduce) escenas.forEach(s => dibujar(s, 0));
+  else {
+    const bucle = ms => {
+      const t = ms / 1000;
+      raton.x += (raton.tx - raton.x) * .05; raton.y += (raton.ty - raton.y) * .05;
+      escenas.forEach(s => { if (s.visible) dibujar(s, t); });
+      requestAnimationFrame(bucle);
+    };
+    requestAnimationFrame(bucle);
+  }
 
   // Encuesta y gracias en ventanas emergentes
   const encuesta = d.getElementById('encuesta'), gracias = d.getElementById('gracias');
